@@ -1,4 +1,4 @@
 all:
-			test -d deps || rebar.cmd get-deps
-			rebar.cmd compile
+			test -d deps || rebar get-deps
+			rebar compile
 			@erl -noshell -pa './deps/jsx/ebin' -pa './ebin' -s fxerl start
