@@ -1,0 +1,2714 @@
+%% Analysis results:
+{  analysis_options,
+ [{callers, true},
+  {sort, acc},
+  {totals, false},
+  {details, true}]}.
+
+%                                               CNT       ACC       OWN        
+[{ totals,                                     34652, 1243.917,  529.214}].  %%%
+
+
+%                                               CNT       ACC       OWN        
+[{ "<0.2.0>",                                  34652,undefined,  529.214}].   %%
+
+{[{undefined,                                     0, 1243.917,    0.052}],     
+ { {fprof,apply_start_stop,4},                    0, 1243.917,    0.052},     %
+ [{{rebar,'-run/1-fun-0-',2},                     1, 1243.865,    0.006}]}.    
+
+{[{{fprof,apply_start_stop,4},                    1, 1243.865,    0.006}],     
+ { {rebar,'-run/1-fun-0-',2},                     1, 1243.865,    0.006},     %
+ [{{rebar,run_aux,2},                             1, 1243.859,    0.058}]}.    
+
+{[{{rebar,'-run/1-fun-0-',2},                     1, 1243.859,    0.058}],     
+ { {rebar,run_aux,2},                             1, 1243.859,    0.058},     %
+ [{{error_handler,undefined_function,3},          2, 1239.713,    0.032},      
+  {{rebar,init_config1,1},                        1,    4.067,    0.034},      
+  {{rebar,'-run_aux/2-lc$^0/1-0-',1},             1,    0.021,    0.011}]}.    
+
+{[{{rebar,run_aux,2},                             2, 1239.713,    0.032},      
+  {{rebar_core,process_commands,2},               1,    0.000,    0.017},      
+  {{rebar_core,is_dir_type,2},                    1,    0.000,    0.015}],     
+ { {error_handler,undefined_function,3},          4, 1239.713,    0.064},     %
+ [{{rebar_core,process_commands,2},               1,  854.347,    0.115},      
+  {{crypto,start,0},                              1,  303.632,    0.004},      
+  {{error_handler,ensure_loaded,1},               4,   90.886,    0.033},      
+  {{rebar_app_utils,is_app_dir,1},                1,    8.717,    0.065},      
+  {{erlang,function_exported,3},                  4,    0.018,    0.018},      
+  {{sets,new,0},                                  1,    0.011,    0.007}]}.    
+
+{[{{error_handler,undefined_function,3},          1,  854.347,    0.115},      
+  {{rebar_core,process_commands,2},               1,    0.000,    0.016}],     
+ { {rebar_core,process_commands,2},               2,  854.347,    0.131},     %
+ [{{rebar_core,process_dir,4},                    1,  508.207,    0.028},      
+  {{rebar_utils,expand_code_path,0},              1,  327.995,    0.116},      
+  {{io,format,2},                                 1,    9.650,    0.008},      
+  {{rebar_core,get_operations,1},                 3,    0.365,    0.062},      
+  {{rebar_utils,get_cwd,0},                       1,    0.336,    0.050},      
+  {{rebar_config,set_xconf,3},                    1,    0.292,    0.013},      
+  {{rebar_config,get_xconf,3},                    1,    0.108,    0.007},      
+  {{rebar_config,reset_skip_dirs,1},              1,    0.086,    0.010},      
+  {{rebar_utils,abort,0},                         1,    0.014,    0.005},      
+  {{rebar_config,clean_config,2},                 1,    0.012,    0.008},      
+  {{dict,new,0},                                  1,    0.011,    0.007},      
+  {{rebar_core,process_commands,2},               1,    0.000,    0.016},      
+  {{error_handler,undefined_function,3},          1,    0.000,    0.017}]}.    
+
+{[{{code_server,call,2},                         75,  387.784,    0.000},      
+  {{gen,do_call,4},                              76,  315.389,    0.000},      
+  {{io,wait_io_mon_reply,2},                      8,   10.555,    0.000},      
+  {{file,file_request,2},                         3,    0.442,    0.000},      
+  {{re,do_grun,5},                                1,    0.130,    0.000},      
+  {{unicode,characters_to_binary,2},              1,    0.116,    0.000},      
+  {{re,split,3},                                  1,    0.112,    0.000},      
+  {{re,do_mlist,5},                               1,    0.023,    0.000},      
+  {{orddict,store,3},                             1,    0.021,    0.000},      
+  {{io_lib_format,build,3},                       1,    0.021,    0.000},      
+  {{init,request,1},                              1,    0.020,    0.000},      
+  {{dict,fold_bucket,3},                          1,    0.019,    0.000},      
+  {{re,grun2,3},                                  1,    0.017,    0.000},      
+  {{orddict,find,2},                              1,    0.012,    0.000},      
+  {{string,chr,3},                                1,    0.009,    0.000},      
+  {{rebar_port_compiler,expand_vars_loop,4},      1,    0.009,    0.000},      
+  {{re,do_split,6},                               1,    0.009,    0.000},      
+  {{re,process_repl_params,3},                    1,    0.008,    0.000},      
+  {{dict,store,3},                                1,    0.007,    0.000},      
+  {{erlang,throw,1},                              1,    0.000,    0.000}],     
+ { suspend,                                     178,  714.703,    0.000},     %
+ [ ]}.
+
+{[{{rebar_core,process_commands,2},               1,  508.207,    0.028}],     
+ { {rebar_core,process_dir,4},                    1,  508.207,    0.028},     %
+ [{{rebar_core,skip_or_process_dir,6},            1,  494.993,    0.008},      
+  {{rebar_core,choose_module_set,2},              1,   10.834,    0.007},      
+  {{file,set_cwd,1},                              1,    1.029,    0.052},      
+  {{filelib,is_dir,1},                            1,    0.876,    0.004},      
+  {{rebar_core,maybe_load_local_config,2},        1,    0.230,    0.009},      
+  {{application,get_env,2},                       1,    0.138,    0.121},      
+  {{rebar_core,update_code_path,1},               1,    0.079,    0.046}]}.    
+
+{[{{rebar_core,process_dir,4},                    1,  494.993,    0.008}],     
+ { {rebar_core,skip_or_process_dir,6},            1,  494.993,    0.008},     %
+ [{{rebar_core,skip_or_process_dir1,7},           1,  494.656,    0.008},      
+  {{lists,suffix,2},                              1,    0.329,    0.012}]}.    
+
+{[{{rebar_core,skip_or_process_dir,6},            1,  494.656,    0.008}],     
+ { {rebar_core,skip_or_process_dir1,7},           1,  494.656,    0.008},     %
+ [{{rebar_core,process_dir1,6},                   1,  472.554,    0.358},      
+  {{rebar_app_utils,is_skipped_app,2},            1,   22.094,    0.018}]}.    
+
+{[{{rebar_core,setup_envs,2},                     1,  384.914,    0.008},      
+  {{rebar_utils,expand_code_path,0},              1,   89.184,    0.010},      
+  {{rebar_core,remember_cwd_predirs,2},           1,    0.003,    0.003},      
+  {{lists,foldl,3},                             220,    0.000,    4.572},      
+  {{dict,from_list,1},                            3,    0.000,    0.031}],     
+ { {lists,foldl,3},                             226,  474.101,    4.624},     %
+ [{{rebar_core,'-setup_envs/2-fun-0-',2},        22,  384.480,    0.180},      
+  {{rebar_utils,'-expand_code_path/0-fun-0-',2},  58,   87.657,    0.763},      
+  {{dict,'-from_list/1-fun-0-',2},              140,   34.042,    1.707},      
+  {{lists,foldl,3},                             220,    0.000,    4.572}]}.    
+
+{[{{rebar_core,skip_or_process_dir1,7},           1,  472.554,    0.358}],     
+ { {rebar_core,process_dir1,6},                   1,  472.554,    0.358},     %
+ [{{rebar_core,setup_envs,2},                     1,  384.918,    0.004},      
+  {{rebar_core,acc_modules,4},                    3,   80.537,    0.025},      
+  {{rebar_core,execute,5},                        1,    3.508,    0.028},      
+  {{file,set_cwd,1},                              2,    1.554,    0.019},      
+  {{rebar_core,process_each,5},                   2,    0.317,    0.055},      
+  {{rebar_core,execute_pre,5},                    1,    0.266,    0.004},      
+  {{rebar_core,execute_post,5},                   1,    0.244,    0.005},      
+  {{sets,add_element,2},                          1,    0.222,    0.018},      
+  {{rebar_core,plugin_modules,2},                 1,    0.190,    0.015},      
+  {{rebar_config,set,3},                          1,    0.125,    0.093},      
+  {{rebar_log,log,3},                             2,    0.101,    0.025},      
+  {{rebar_config,is_skip_dir,2},                  1,    0.076,    0.004},      
+  {{application,get_env,2},                       1,    0.061,    0.004},      
+  {{rebar_core,remember_cwd_predirs,2},           1,    0.058,    0.043},      
+  {{erlang,'++',2},                               4,    0.016,    0.016},      
+  {{rebar_core,restore_code_path,1},              1,    0.003,    0.003}]}.    
+
+{[{{code,set_path,1},                             1,  238.355,    0.004},      
+  {{code,ensure_loaded,1},                       70,  152.756,    0.846},      
+  {{code,lib_dir,2},                              2,    0.140,    0.007},      
+  {{code,get_path,0},                             1,    0.120,    0.004},      
+  {{code,root_dir,0},                             1,    0.022,    0.003}],     
+ { {code,call,1},                                75,  391.393,    0.864},     %
+ [{{code_server,call,2},                         75,  390.529,    2.727}]}.    
+
+{[{{code,call,1},                                75,  390.529,    2.727}],     
+ { {code_server,call,2},                         75,  390.529,    2.727},     %
+ [{suspend,                                      75,  387.784,    0.000},      
+  {garbage_collect,                               1,    0.018,    0.018}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,  384.918,    0.004}],     
+ { {rebar_core,setup_envs,2},                     1,  384.918,    0.004},     %
+ [{{lists,foldl,3},                               1,  384.914,    0.008}]}.    
+
+{[{{lists,foldl,3},                              22,  384.480,    0.180}],     
+ { {rebar_core,'-setup_envs/2-fun-0-',2},        22,  384.480,    0.180},     %
+ [{{rebar_port_compiler,setup_env,1},             1,  382.182,    0.004},      
+  {{rebar_deps,setup_env,1},                      1,    1.603,    0.016},      
+  {{rebar_config,save_env,3},                     2,    0.311,    0.022},      
+  {{erlang,function_exported,3},                 22,    0.197,    0.197},      
+  {{erlang,'++',2},                               2,    0.007,    0.007}]}.    
+
+{[{{rebar_core,'-setup_envs/2-fun-0-',2},         1,  382.182,    0.004}],     
+ { {rebar_port_compiler,setup_env,1},             1,  382.182,    0.004},     %
+ [{{rebar_port_compiler,setup_env,2},             1,  382.178,    0.058}]}.    
+
+{[{{rebar_port_compiler,setup_env,1},             1,  382.178,    0.058}],     
+ { {rebar_port_compiler,setup_env,2},             1,  382.178,    0.058},     %
+ [{{rebar_port_compiler,expand_vars_loop,1},      1,  184.778,    0.008},      
+  {{rebar_port_compiler,merge_each_var,2},        1,  120.240,    0.013},      
+  {{rebar_port_compiler,os_env,0},                1,   42.979,    0.056},      
+  {{rebar_port_compiler,apply_defaults,2},        1,   26.852,    0.015},      
+  {{rebar_port_compiler,filter_env,2},            3,    5.250,    0.083},      
+  {{rebar_port_compiler,default_env,0},           1,    1.637,    0.070},      
+  {{rebar_config,get_list,3},                     2,    0.219,    0.007},      
+  {{rebar_port_compiler,get_defines,1},           1,    0.153,    0.022},      
+  {{erlang,'++',2},                               3,    0.012,    0.012}]}.    
+
+{[{{rebar_core,process_commands,2},               1,  327.995,    0.116}],     
+ { {rebar_utils,expand_code_path,0},              1,  327.995,    0.116},     %
+ [{{code,set_path,1},                             1,  238.360,    0.005},      
+  {{lists,foldl,3},                               1,   89.184,    0.010},      
+  {{lists,reverse,1},                             1,    0.210,    0.168},      
+  {{code,get_path,0},                             1,    0.125,    0.005}]}.    
+
+{[{{application_controller,start_application,2},   1,  216.761,    0.009},      
+  {{application_controller,load_application,1},   1,   86.747,    0.008},      
+  {{file,call,2},                                74,   22.607,    1.216}],     
+ { {gen_server,call,3},                          76,  326.115,    1.233},     %
+ [{{gen,call,4},                                 76,  324.882,    2.080}]}.    
+
+{[{{gen_server,call,3},                          76,  324.882,    2.080}],     
+ { {gen,call,4},                                 76,  324.882,    2.080},     %
+ [{{gen,do_call,4},                              76,  322.157,    4.597},      
+  {{erlang,whereis,1},                           76,    0.645,    0.645}]}.    
+
+{[{{gen,call,4},                                 76,  322.157,    4.597}],     
+ { {gen,do_call,4},                              76,  322.157,    4.597},     %
+ [{suspend,                                      76,  315.389,    0.000},      
+  {{erlang,monitor,2},                           76,    0.886,    0.886},      
+  {{erlang,send,3},                              76,    0.736,    0.736},      
+  {{erlang,demonitor,2},                         76,    0.495,    0.495},      
+  {garbage_collect,                               2,    0.054,    0.054}]}.    
+
+{[{{error_handler,undefined_function,3},          1,  303.632,    0.004}],     
+ { {crypto,start,0},                              1,  303.632,    0.004},     %
+ [{{application,start,1},                         1,  303.628,    0.004}]}.    
+
+{[{{crypto,start,0},                              1,  303.628,    0.004}],     
+ { {application,start,1},                         1,  303.628,    0.004},     %
+ [{{application,start,2},                         1,  303.624,    0.051}]}.    
+
+{[{{application,start,1},                         1,  303.624,    0.051}],     
+ { {application,start,2},                         1,  303.624,    0.051},     %
+ [{{application_controller,start_application,2},   1,  216.765,    0.004},      
+  {{application,load,1},                          1,   86.803,    0.003},      
+  {{application,get_appl_name,1},                 1,    0.005,    0.005}]}.    
+
+{[{{rebar_utils,expand_code_path,0},              1,  238.360,    0.005}],     
+ { {code,set_path,1},                             1,  238.360,    0.005},     %
+ [{{code,call,1},                                 1,  238.355,    0.004}]}.    
+
+{[{{application,start,2},                         1,  216.765,    0.004}],     
+ { {application_controller,start_application,2},   1,  216.765,    0.004},     %
+ [{{gen_server,call,3},                           1,  216.761,    0.009}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,  184.778,    0.008}],     
+ { {rebar_port_compiler,expand_vars_loop,1},      1,  184.778,    0.008},     %
+ [{{rebar_port_compiler,expand_vars_loop,4},      1,  164.816,    0.010},      
+  {{dict,from_list,1},                            1,   19.954,    0.009}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,1},      1,  164.816,    0.010},      
+  {{rebar_port_compiler,expand_vars_loop,4},     87,    0.000,    2.331}],     
+ { {rebar_port_compiler,expand_vars_loop,4},     88,  164.816,    2.341},     %
+ [{{rebar_port_compiler,expand_keys_in_value,3},  21,  103.655,    0.533},      
+  {{re,run,3},                                   85,   44.881,    1.007},      
+  {{dict,store,3},                               15,    4.640,    0.727},      
+  {{lists,keysort,2},                             1,    3.297,    0.004},      
+  {{dict,to_list,1},                              1,    3.204,    0.005},      
+  {{rebar_port_compiler,'-expand_vars_loop/4-lc$^0/1-0-',1},  21,    1.708,    0.641},      
+  {{lists,usort,1},                              21,    1.081,    0.122},      
+  {suspend,                                       1,    0.009,    0.000},      
+  {{rebar_port_compiler,expand_vars_loop,4},     87,    0.000,    2.331}]}.    
+
+{[{{rebar_port_compiler,expand_keys_in_value,3},  21,   92.717,    0.918},      
+  {{rebar_port_compiler,merge_each_var,2},       71,   71.089,    1.507}],     
+ { {rebar_utils,expand_env_variable,3},          92,  163.806,    2.425},     %
+ [{{re,replace,4},                               66,   70.794,    5.722},      
+  {{io_lib,format,2},                            33,   55.921,    1.026},      
+  {{string,chr,2},                               92,   34.666,    1.392}]}.    
+
+{[{{error_handler,ensure_loaded,1},               4,   90.837,    0.064},      
+  {{rebar_core,select_modules,3},                66,   62.863,    0.880}],     
+ { {code,ensure_loaded,1},                       70,  153.700,    0.944},     %
+ [{{code,call,1},                                70,  152.756,    0.846}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,  120.240,    0.013},      
+  {{rebar_port_compiler,merge_each_var,2},       71,    0.000,    4.095}],     
+ { {rebar_port_compiler,merge_each_var,2},       72,  120.240,    4.108},     %
+ [{{rebar_utils,expand_env_variable,3},          71,   71.089,    1.507},      
+  {{orddict,store,3},                            71,   27.889,    7.945},      
+  {{orddict,find,2},                             71,   17.154,    1.454},      
+  {{rebar_port_compiler,merge_each_var,2},       71,    0.000,    4.095}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,4},     21,  103.655,    0.533},      
+  {{rebar_port_compiler,expand_keys_in_value,3},  66,    0.000,    1.738}],     
+ { {rebar_port_compiler,expand_keys_in_value,3},  87,  103.655,    2.271},     %
+ [{{rebar_utils,expand_env_variable,3},          21,   92.717,    0.918},      
+  {{dict,find,2},                                66,    8.667,    1.570},      
+  {{rebar_port_compiler,expand_keys_in_value,3},  66,    0.000,    1.738}]}.    
+
+{[{{error_handler,undefined_function,3},          4,   90.886,    0.033}],     
+ { {error_handler,ensure_loaded,1},               4,   90.886,    0.033},     %
+ [{{code,ensure_loaded,1},                        4,   90.837,    0.064},      
+  {{erlang,whereis,1},                            4,    0.016,    0.016}]}.    
+
+{[{{rebar_utils,'-expand_code_path/0-fun-0-',2},  58,   86.894,    0.993},      
+  {{rebar,init_config1,1},                        2,    2.746,    0.017}],     
+ { {filename,absname,1},                         60,   89.640,    1.010},     %
+ [{{filename,absname,2},                         60,   67.306,    1.589},      
+  {{file,get_cwd,0},                             60,   21.324,    0.532}]}.    
+
+{[{{lists,foldl,3},                              58,   87.657,    0.763}],     
+ { {rebar_utils,'-expand_code_path/0-fun-0-',2},  58,   87.657,    0.763},     %
+ [{{filename,absname,1},                         58,   86.894,    0.993}]}.    
+
+{[{{application,start,2},                         1,   86.803,    0.003}],     
+ { {application,load,1},                          1,   86.803,    0.003},     %
+ [{{application,load1,2},                         1,   86.800,    0.007}]}.    
+
+{[{{application,load,1},                          1,   86.800,    0.007}],     
+ { {application,load1,2},                         1,   86.800,    0.007},     %
+ [{{application_controller,load_application,1},   1,   86.793,    0.046}]}.    
+
+{[{{application,load1,2},                         1,   86.793,    0.046}],     
+ { {application_controller,load_application,1},   1,   86.793,    0.046},     %
+ [{{gen_server,call,3},                           1,   86.747,    0.008}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,4},     85,   44.881,    1.007},      
+  {{re,do_replace,5},                            66,   26.510,    0.717},      
+  {{re,split,3},                                 53,   14.587,    0.577},      
+  {{rebar_utils,is_arch,1},                      22,    0.432,    0.432},      
+  {{re,urun2,3},                                151,    0.000,    3.966},      
+  {{re,loopexec,6},                             460,    0.000,    6.472}],     
+ { {re,run,3},                                  837,   86.410,   13.171},     %
+ [{{re,urun,3},                                 151,   69.667,    2.861},      
+  {{re,grun,3},                                 204,   60.972,    4.253}]}.    
+
+{[{{rebar_core,process_dir1,6},                   3,   80.537,    0.025}],     
+ { {rebar_core,acc_modules,4},                    3,   80.537,    0.025},     %
+ [{{rebar_core,select_modules,3},                 3,   62.626,    0.072},      
+  {{rebar_core,acc_modules,5},                    3,   17.886,    0.105}]}.    
+
+{[{{rebar_utils,expand_env_variable,3},          66,   70.794,    5.722}],     
+ { {re,replace,4},                               66,   70.794,    5.722},     %
+ [{{re,do_replace,5},                            66,   55.156,    1.508},      
+  {{re,process_repl_params,3},                   66,    4.780,    2.198},      
+  {{re,to_binary,2},                            132,    4.269,    2.419},      
+  {{unicode,characters_to_list,2},               66,    0.785,    0.785},      
+  {garbage_collect,                               1,    0.082,    0.082}]}.    
+
+{[{{re,run,3},                                  151,   69.667,    2.861}],     
+ { {re,urun,3},                                 151,   69.667,    2.861},     %
+ [{{re,urun2,3},                                151,   66.743,    8.916},      
+  {garbage_collect,                               1,    0.063,    0.063}]}.    
+
+{[{{filename,absname,1},                         60,   67.306,    1.589}],     
+ { {filename,absname,2},                         60,   67.306,    1.589},     %
+ [{{filename,flatten,1},                         59,   36.442,    0.579},      
+  {{filename,join,1},                            59,   26.049,    0.995},      
+  {{filename,pathtype,1},                        60,    2.817,    1.016},      
+  {{filename,absname_join,2},                     1,    0.409,    0.008}]}.    
+
+{[{{re,urun,3},                                 151,   66.743,    8.916}],     
+ { {re,urun2,3},                                151,   66.743,    8.916},     %
+ [{{unicode,characters_to_binary,2},            301,    3.638,    3.517},      
+  {{re,process_uparams,2},                      151,    3.261,    1.322},      
+  {{re,run,3},                                  151,    0.000,    3.966}]}.    
+
+{[{{rebar_core,acc_modules,4},                    3,   62.626,    0.072},      
+  {{rebar_core,execute,5},                        3,    3.085,    0.151},      
+  {{rebar_core,select_modules,3},                66,    0.000,    2.029}],     
+ { {rebar_core,select_modules,3},                72,   65.711,    2.252},     %
+ [{{code,ensure_loaded,1},                       66,   62.863,    0.880},      
+  {{erlang,function_exported,3},                 66,    0.574,    0.574},      
+  {{lists,reverse,1},                             6,    0.022,    0.022},      
+  {{rebar_core,select_modules,3},                66,    0.000,    2.029}]}.    
+
+{[{{re,run,3},                                  204,   60.972,    4.253}],     
+ { {re,grun,3},                                 204,   60.972,    4.253},     %
+ [{{re,grun2,3},                                204,   56.719,    6.219}]}.    
+
+{[{{re,grun,3},                                 204,   56.719,    6.219}],     
+ { {re,grun2,3},                                204,   56.719,    6.219},     %
+ [{{re,do_grun,5},                              204,   46.643,    5.670},      
+  {{re,check_for_unicode,2},                    204,    1.951,    1.951},      
+  {{re,to_binary,2},                            204,    1.889,    1.889},      
+  {suspend,                                       1,    0.017,    0.000}]}.    
+
+{[{{rebar_utils,expand_env_variable,3},          33,   55.921,    1.026}],     
+ { {io_lib,format,2},                            33,   55.921,    1.026},     %
+ [{{io_lib_format,fwrite,2},                     33,   54.895,    1.089}]}.    
+
+{[{{re,replace,4},                               66,   55.156,    1.508}],     
+ { {re,do_replace,5},                            66,   55.156,    1.508},     %
+ [{{re,apply_mlist,3},                           22,   27.138,    0.370},      
+  {{re,run,3},                                   66,   26.510,    0.717}]}.    
+
+{[{{io_lib,format,2},                            33,   54.895,    1.089}],     
+ { {io_lib_format,fwrite,2},                     33,   54.895,    1.089},     %
+ [{{io_lib_format,build,3},                      33,   27.249,    4.072},      
+  {{io_lib_format,collect,2},                    33,   19.713,    3.272},      
+  {{io_lib_format,pcount,1},                     33,    6.844,    0.670}]}.    
+
+{[{{re,grun2,3},                                204,   46.643,    5.670}],     
+ { {re,do_grun,5},                              204,   46.643,    5.670},     %
+ [{{re,loopexec,6},                             204,   19.953,    9.122},      
+  {{re,process_parameters,5},                   204,   11.066,    1.950},      
+  {{re,postprocess,5},                          204,    9.824,    2.079},      
+  {suspend,                                       1,    0.130,    0.000}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,   42.979,    0.056}],     
+ { {rebar_port_compiler,os_env,0},                1,   42.979,    0.056},     %
+ [{{rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},   1,   42.506,    0.938},      
+  {{rebar_port_compiler,'-os_env/0-lc$^1/1-1-',1},   1,    0.350,    0.082},      
+  {garbage_collect,                               1,    0.039,    0.039},      
+  {{os,getenv,0},                                 1,    0.028,    0.028}]}.    
+
+{[{{rebar_port_compiler,os_env,0},                1,   42.506,    0.938},      
+  {{rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},  53,    0.000,    0.427}],     
+ { {rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},  54,   42.506,    1.365},     %
+ [{{re,split,3},                                 53,   40.882,    2.943},      
+  {{erlang,list_to_tuple,1},                     53,    0.259,    0.259},      
+  {{rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},  53,    0.000,    0.427}]}.    
+
+{[{{rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},  53,   40.882,    2.943}],     
+ { {re,split,3},                                 53,   40.882,    2.943},     %
+ [{{re,run,3},                                   53,   14.587,    0.577},      
+  {{re,compile_split,2},                         53,   11.170,    1.831},      
+  {{re,do_split,6},                              53,    4.477,    2.330},      
+  {{re,convert_any_split_result,4},              53,    4.085,    0.389},      
+  {{re,process_split_params,6},                  53,    1.899,    0.245},      
+  {{re,to_binary,2},                             53,    1.214,    0.661},      
+  {{erlang,'++',2},                              53,    0.395,    0.395},      
+  {suspend,                                       1,    0.112,    0.000}]}.    
+
+{[{{filename,absname,2},                         59,   36.442,    0.579},      
+  {{filename,split,1},                            3,    1.453,    0.011},      
+  {{filename,extension,1},                        1,    0.705,    0.004},      
+  {{filename,absname_join,2},                     1,    0.015,    0.005}],     
+ { {filename,flatten,1},                         64,   38.615,    0.599},     %
+ [{{filename,do_flatten,2},                      64,   38.016,    7.670}]}.    
+
+{[{{dict,'-from_list/1-fun-0-',2},              140,   32.335,    3.647},      
+  {{rebar_port_compiler,expand_vars_loop,4},     15,    4.640,    0.727},      
+  {{rebar_config,set_xconf,3},                    5,    1.239,    0.162},      
+  {{rebar_config,save_env,3},                     2,    0.283,    0.155}],     
+ { {dict,store,3},                              162,   38.497,    4.691},     %
+ [{{dict,on_bucket,3},                          162,   22.006,    7.441},      
+  {{dict,maybe_expand,2},                       162,    6.474,    1.628},      
+  {{dict,get_slot,2},                           162,    5.319,    3.374},      
+  {suspend,                                       1,    0.007,    0.000}]}.    
+
+{[{{filename,flatten,1},                         64,   38.016,    7.670},      
+  {{filename,do_flatten,2},                    2408,    0.000,   30.216}],     
+ { {filename,do_flatten,2},                    2472,   38.016,   37.886},     %
+ [{garbage_collect,                               4,    0.130,    0.130},      
+  {{filename,do_flatten,2},                    2408,    0.000,   30.216}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,1},      1,   19.954,    0.009},      
+  {{rebar_port_compiler,apply_defaults,2},        2,   16.810,    0.017}],     
+ { {dict,from_list,1},                            3,   36.764,    0.026},     %
+ [{{dict,new,0},                                  3,    0.036,    0.022},      
+  {{lists,foldl,3},                               3,    0.000,    0.031}]}.    
+
+{[{{rebar_utils,expand_env_variable,3},          92,   34.666,    1.392}],     
+ { {string,chr,2},                               92,   34.666,    1.392},     %
+ [{{string,chr,3},                               92,   33.274,    1.055}]}.    
+
+{[{{filename,join,1},                            67,   25.275,    0.912},      
+  {{filename,join,2},                            33,    9.349,    0.363},      
+  {{filename,join1,4},                         3507,    0.000,   30.074}],     
+ { {filename,join1,4},                         3607,   34.624,   31.349},     %
+ [{{filename,maybe_remove_dirsep,2},            100,    3.275,    0.791},      
+  {{filename,join1,4},                         3507,    0.000,   30.074}]}.    
+
+{[{{lists,foldl,3},                             140,   34.042,    1.707}],     
+ { {dict,'-from_list/1-fun-0-',2},              140,   34.042,    1.707},     %
+ [{{dict,store,3},                              140,   32.335,    3.647}]}.    
+
+{[{{filename,absname,2},                         59,   26.049,    0.995},      
+  {{rebar_app_utils,is_app_dir,1},                6,    4.865,    0.117},      
+  {{rebar_deps,get_deps_dir,2},                   2,    2.773,    0.052},      
+  {{filename,join,1},                            10,    0.000,    0.149}],     
+ { {filename,join,1},                            77,   33.687,    1.313},     %
+ [{{filename,join1,4},                           67,   25.275,    0.912},      
+  {{filename,join,2},                            10,    4.457,    0.280},      
+  {{filename,major_os_type,0},                   67,    2.642,    1.232},      
+  {{filename,join,1},                            10,    0.000,    0.149}]}.    
+
+{[{{string,chr,2},                               92,   33.274,    1.055},      
+  {{string,chr,3},                             3125,    0.000,   32.210}],     
+ { {string,chr,3},                             3217,   33.274,   33.265},     %
+ [{suspend,                                       1,    0.009,    0.000},      
+  {{string,chr,3},                             3125,    0.000,   32.210}]}.    
+
+{[{{rebar_port_compiler,merge_each_var,2},       71,   27.889,    7.945},      
+  {{orddict,store,3},                          1285,    0.000,   19.923}],     
+ { {orddict,store,3},                          1356,   27.889,   27.868},     %
+ [{suspend,                                       1,    0.021,    0.000},      
+  {{orddict,store,3},                          1285,    0.000,   19.923}]}.    
+
+{[{{io_lib_format,fwrite,2},                     33,   27.249,    4.072},      
+  {{io_lib_format,build,3},                     495,    0.000,    7.057}],     
+ { {io_lib_format,build,3},                     528,   27.249,   11.129},     %
+ [{{io_lib_format,control,9},                    66,   15.466,    1.151},      
+  {{io_lib_format,decr_pc,2},                    66,    0.562,    0.562},      
+  {garbage_collect,                               1,    0.071,    0.071},      
+  {suspend,                                       1,    0.021,    0.000},      
+  {{io_lib_format,build,3},                     495,    0.000,    7.057}]}.    
+
+{[{{re,do_replace,5},                            22,   27.138,    0.370}],     
+ { {re,apply_mlist,3},                           22,   27.138,    0.370},     %
+ [{{re,precomp_repl,1},                          22,   23.142,    5.483},      
+  {{re,do_mlist,5},                              22,    3.626,    0.810}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,   26.852,    0.015}],     
+ { {rebar_port_compiler,apply_defaults,2},        1,   26.852,    0.015},     %
+ [{{dict,from_list,1},                            2,   16.810,    0.017},      
+  {{dict,merge,3},                                1,    6.811,    0.019},      
+  {{dict,to_list,1},                              1,    3.216,    0.012}]}.    
+
+{[{{file,get_cwd,0},                             64,   21.984,    1.337},      
+  {{file,check_and_call,2},                       9,    3.083,    0.323},      
+  {{file,open,2},                                 1,    0.436,    0.010}],     
+ { {file,call,2},                                74,   25.503,    1.670},     %
+ [{{gen_server,call,3},                          74,   22.607,    1.216},      
+  {{erlang,list_to_tuple,1},                     74,    1.226,    1.226}]}.    
+
+{[{{dict,store,3},                              162,   22.006,    7.441},      
+  {{dict,update,4},                              17,    3.200,    0.802}],     
+ { {dict,on_bucket,3},                          179,   25.206,    8.243},     %
+ [{{dict,'-store/3-fun-0-',3},                  162,    8.993,    1.622},      
+  {{erlang,setelement,3},                       537,    6.195,    6.195},      
+  {{dict,'-update/4-fun-0-',4},                  17,    1.729,    0.158},      
+  {garbage_collect,                               1,    0.046,    0.046}]}.    
+
+{[{{re,apply_mlist,3},                           22,   23.142,    5.483},      
+  {{re,precomp_repl,1},                        1106,    0.000,   16.658}],     
+ { {re,precomp_repl,1},                        1128,   23.142,   22.141},     %
+ [{{re,pick_int,1},                              22,    0.741,    0.407},      
+  {{erlang,list_to_integer,1},                   22,    0.214,    0.214},      
+  {garbage_collect,                               2,    0.046,    0.046},      
+  {{re,precomp_repl,1},                        1106,    0.000,   16.658}]}.    
+
+{[{{filename,absname,1},                         60,   21.324,    0.532},      
+  {{rebar_utils,get_cwd,0},                       4,    1.218,    0.026}],     
+ { {file,get_cwd,0},                             64,   22.542,    0.558},     %
+ [{{file,call,2},                                64,   21.984,    1.337}]}.    
+
+{[{{rebar_core,skip_or_process_dir1,7},           1,   22.094,    0.018}],     
+ { {rebar_app_utils,is_skipped_app,2},            1,   22.094,    0.018},     %
+ [{{rebar_app_utils,app_name,2},                  1,   21.874,    0.082},      
+  {{rebar_app_utils,get_skip_apps,1},             1,    0.148,    0.004},      
+  {{rebar_app_utils,get_apps,1},                  1,    0.054,    0.005}]}.    
+
+{[{{rebar_deps,is_app_available,5},               1,   13.290,    0.024},      
+  {{error_handler,undefined_function,3},          1,    8.717,    0.065}],     
+ { {rebar_app_utils,is_app_dir,1},                2,   22.007,    0.089},     %
+ [{{filelib,wildcard,1},                          3,   17.053,    0.021},      
+  {{filename,join,1},                             6,    4.865,    0.117}]}.    
+
+{[{{rebar_app_utils,is_skipped_app,2},            1,   21.874,    0.082}],     
+ { {rebar_app_utils,app_name,2},                  1,   21.874,    0.082},     %
+ [{{rebar_app_utils,load_app_file,2},             1,   21.792,    0.021}]}.    
+
+{[{{rebar_app_utils,app_name,2},                  1,   21.792,    0.021}],     
+ { {rebar_app_utils,load_app_file,2},             1,   21.792,    0.021},     %
+ [{{rebar_app_utils,consult_app_file,1},          1,   21.348,    0.013},      
+  {{rebar_config,set_xconf,3},                    1,    0.299,    0.011},      
+  {{rebar_config,get_xconf,3},                    1,    0.124,    0.008}]}.    
+
+{[{{rebar_app_utils,load_app_file,2},             1,   21.348,    0.013}],     
+ { {rebar_app_utils,consult_app_file,1},          1,   21.348,    0.013},     %
+ [{{rebar_config,consult_file,1},                 1,   18.944,    0.059},      
+  {{filelib,is_regular,1},                        1,    1.756,    0.004},      
+  {{lists,suffix,2},                              1,    0.635,    0.027}]}.    
+
+{[{{re,do_grun,5},                              204,   19.953,    9.122},      
+  {{re,loopexec,6},                             256,    0.000,    4.330}],     
+ { {re,loopexec,6},                             460,   19.953,   13.452},     %
+ [{garbage_collect,                               2,    0.029,    0.029},      
+  {{re,run,3},                                  460,    0.000,    6.472},      
+  {{re,loopexec,6},                             256,    0.000,    4.330}]}.    
+
+{[{{io_lib_format,fwrite,2},                     33,   19.713,    3.272},      
+  {{io_lib_format,collect,2},                   495,    0.000,    6.331}],     
+ { {io_lib_format,collect,2},                   528,   19.713,    9.603},     %
+ [{{io_lib_format,collect_cseq,2},               66,   10.110,    3.770},      
+  {{io_lib_format,collect,2},                   495,    0.000,    6.331}]}.    
+
+{[{{rebar_app_utils,consult_app_file,1},          1,   18.944,    0.059}],     
+ { {rebar_config,consult_file,1},                 1,   18.944,    0.059},     %
+ [{{file,consult,1},                              1,   16.187,    0.026},      
+  {{filelib,is_regular,1},                        1,    1.431,    0.003},      
+  {{filename,extension,1},                        1,    1.155,    0.012},      
+  {{rebar_log,log,3},                             1,    0.109,    0.048},      
+  {{erlang,'++',2},                               1,    0.003,    0.003}]}.    
+
+{[{{rebar_core,acc_modules,4},                    3,   17.886,    0.105},      
+  {{rebar_core,acc_modules,5},                    3,    0.000,    0.021}],     
+ { {rebar_core,acc_modules,5},                    6,   17.886,    0.126},     %
+ [{{rebar_deps,preprocess,2},                     1,   16.465,    0.082},      
+  {{rebar_subdirs,preprocess,2},                  1,    1.108,    0.142},      
+  {{rebar_deps,postprocess,2},                    1,    0.142,    0.009},      
+  {{erlang,'++',2},                               3,    0.045,    0.045},      
+  {{rebar_core,acc_modules,5},                    3,    0.000,    0.021}]}.    
+
+{[{{rebar_port_compiler,merge_each_var,2},       71,   17.154,    1.454},      
+  {{orddict,find,2},                           1285,    0.000,   15.688}],     
+ { {orddict,find,2},                           1356,   17.154,   17.142},     %
+ [{suspend,                                       1,    0.012,    0.000},      
+  {{orddict,find,2},                           1285,    0.000,   15.688}]}.    
+
+{[{{rebar_app_utils,is_app_dir,1},                3,   17.053,    0.021}],     
+ { {filelib,wildcard,1},                          3,   17.053,    0.021},     %
+ [{{filelib,do_wildcard,3},                       3,   17.032,    0.069}]}.    
+
+{[{{filelib,wildcard,1},                          3,   17.032,    0.069}],     
+ { {filelib,do_wildcard,3},                       3,   17.032,    0.069},     %
+ [{{filelib,compile_wildcard,2},                  3,   12.000,    0.034},      
+  {{filelib,do_wildcard_1,2},                     3,    4.908,    0.047},      
+  {{lists,sort,1},                                3,    0.055,    0.055}]}.    
+
+{[{{rebar_core,acc_modules,5},                    1,   16.465,    0.082}],     
+ { {rebar_deps,preprocess,2},                     1,   16.465,    0.082},     %
+ [{{rebar_deps,find_deps,3},                      1,   15.289,    0.042},      
+  {{rebar_deps,set_shared_deps_dir,2},            1,    0.499,    0.015},      
+  {{rebar_log,log,3},                             2,    0.245,    0.135},      
+  {{rebar_deps,get_shared_deps_dir,2},            1,    0.135,    0.005},      
+  {{rebar_config,get_global,3},                   1,    0.116,    0.008},      
+  {{rebar_config,get_local,3},                    1,    0.073,    0.008},      
+  {{rebar_config,get,3},                          1,    0.011,    0.004},      
+  {{rebar_deps,dep_dirs,1},                       1,    0.007,    0.004},      
+  {{rebar_deps,'-preprocess/2-lc$^0/1-0-',1},     1,    0.005,    0.005},      
+  {{rebar_deps,update_deps_code_path,2},          1,    0.003,    0.003}]}.    
+
+{[{{rebar_config,consult_file,1},                 1,   16.187,    0.026}],     
+ { {file,consult,1},                              1,   16.187,    0.026},     %
+ [{{file,consult_stream,1},                       1,   14.560,    0.009},      
+  {{file,open,2},                                 1,    1.325,    0.022},      
+  {{file,close,1},                                1,    0.276,    0.008}]}.    
+
+{[{{io_lib_format,build,3},                      66,   15.466,    1.151}],     
+ { {io_lib_format,control,9},                    66,   15.466,    1.151},     %
+ [{{io_lib_format,iolist_to_chars,1},            66,   13.691,    3.575},      
+  {{io_lib_format,string,5},                     66,    0.624,    0.624}]}.    
+
+{[{{rebar_deps,preprocess,2},                     1,   15.289,    0.042}],     
+ { {rebar_deps,find_deps,3},                      1,   15.289,    0.042},     %
+ [{{rebar_deps,find_deps,4},                      1,   15.247,    0.006}]}.    
+
+{[{{rebar_deps,find_deps,3},                      1,   15.247,    0.006},      
+  {{rebar_deps,find_deps,4},                      2,    0.000,    0.027}],     
+ { {rebar_deps,find_deps,4},                      3,   15.247,    0.033},     %
+ [{{rebar_deps,find_dep,2},                       1,   15.188,    0.004},      
+  {{rebar_deps,acc_deps,5},                       1,    0.015,    0.008},      
+  {{lists,reverse,1},                             2,    0.007,    0.007},      
+  {{proplists,get_value,3},                       1,    0.004,    0.004},      
+  {{rebar_deps,find_deps,4},                      2,    0.000,    0.027}]}.    
+
+{[{{rebar_deps,find_deps,4},                      1,   15.188,    0.004}],     
+ { {rebar_deps,find_dep,2},                       1,   15.188,    0.004},     %
+ [{{rebar_deps,find_dep,3},                       1,   15.184,    0.009}]}.    
+
+{[{{rebar_deps,find_dep,2},                       1,   15.184,    0.009}],     
+ { {rebar_deps,find_dep,3},                       1,   15.184,    0.009},     %
+ [{{rebar_deps,find_dep_in_dir,3},                1,   13.497,    0.009},      
+  {{rebar_deps,get_deps_dir,2},                   1,    1.678,    0.013}]}.    
+
+{[{{file,consult,1},                              1,   14.560,    0.009}],     
+ { {file,consult_stream,1},                       1,   14.560,    0.009},     %
+ [{{file,consult_stream,3},                       1,   12.985,    0.009},      
+  {{epp,set_encoding,1},                          1,    1.566,    0.051}]}.    
+
+{[{{io_lib_format,control,9},                    66,   13.691,    3.575},      
+  {{io_lib_format,iolist_to_chars,1},           672,    0.000,   10.050}],     
+ { {io_lib_format,iolist_to_chars,1},           738,   13.691,   13.625},     %
+ [{garbage_collect,                               1,    0.066,    0.066},      
+  {{io_lib_format,iolist_to_chars,1},           672,    0.000,   10.050}]}.    
+
+{[{{rebar_deps,find_dep,3},                       1,   13.497,    0.009}],     
+ { {rebar_deps,find_dep_in_dir,3},                1,   13.497,    0.009},     %
+ [{{rebar_deps,is_app_available,5},               1,   13.488,    0.051}]}.    
+
+{[{{rebar_deps,find_dep_in_dir,3},                1,   13.488,    0.051}],     
+ { {rebar_deps,is_app_available,5},               1,   13.488,    0.051},     %
+ [{{rebar_app_utils,is_app_dir,1},                1,   13.290,    0.024},      
+  {{rebar_log,log,3},                             2,    0.147,    0.023}]}.    
+
+{[{{dict,merge,3},                                1,    6.792,    0.005},      
+  {{dict,fold,3},                                 2,    6.396,    0.009}],     
+ { {dict,fold_dict,3},                            3,   13.188,    0.014},     %
+ [{{dict,fold_segs,4},                            3,   13.174,    0.064}]}.    
+
+{[{{dict,fold_dict,3},                            3,   13.174,    0.064},      
+  {{dict,fold_segs,4},                            3,    0.000,    0.014}],     
+ { {dict,fold_segs,4},                            6,   13.174,    0.078},     %
+ [{{dict,fold_seg,4},                             3,   13.096,    0.025},      
+  {{dict,fold_segs,4},                            3,    0.000,    0.014}]}.    
+
+{[{{dict,fold_segs,4},                            3,   13.096,    0.025},      
+  {{dict,fold_seg,4},                            48,    0.000,    1.456}],     
+ { {dict,fold_seg,4},                            51,   13.096,    1.481},     %
+ [{{dict,fold_bucket,3},                         48,   11.615,    1.302},      
+  {{dict,fold_seg,4},                            48,    0.000,    1.456}]}.    
+
+{[{{file,consult_stream,1},                       1,   12.985,    0.009},      
+  {{file,consult_stream,3},                       1,    0.000,    0.011}],     
+ { {file,consult_stream,3},                       2,   12.985,    0.020},     %
+ [{{io,read,3},                                   2,   12.961,    0.007},      
+  {{lists,reverse,1},                             1,    0.004,    0.004},      
+  {{file,consult_stream,3},                       1,    0.000,    0.011}]}.    
+
+{[{{file,consult_stream,3},                       2,   12.961,    0.007}],     
+ { {io,read,3},                                   2,   12.961,    0.007},     %
+ [{{io,read,4},                                   2,   12.954,    0.059}]}.    
+
+{[{{io,read,3},                                   2,   12.954,    0.059}],     
+ { {io,read,4},                                   2,   12.954,    0.059},     %
+ [{{erl_parse,parse_term,1},                      1,   11.900,    0.012},      
+  {{io,request,2},                                2,    0.995,    0.113}]}.    
+
+{[{{filelib,compile_join,2},                     19,    6.543,    0.682},      
+  {{filename,join,1},                            10,    4.457,    0.280},      
+  {{rebar_port_compiler,default_env,0},           1,    0.542,    0.011},      
+  {{rebar_subdirs,check_loop,1},                  1,    0.468,    0.045},      
+  {{filelib,prepare_base,1},                      1,    0.391,    0.011},      
+  {{filename,absname_join,2},                     1,    0.386,    0.053},      
+  {{filename,join,2},                             1,    0.000,    0.048}],     
+ { {filename,join,2},                            34,   12.787,    1.130},     %
+ [{{filename,join1,4},                           33,    9.349,    0.363},      
+  {{filename,pathtype,1},                        33,    1.334,    0.379},      
+  {{filename,major_os_type,0},                   33,    0.970,    0.418},      
+  {{erlang,atom_to_list,1},                       1,    0.004,    0.004},      
+  {{filename,join,2},                             1,    0.000,    0.048}]}.    
+
+{[{{filelib,do_wildcard,3},                       3,   12.000,    0.034}],     
+ { {filelib,compile_wildcard,2},                  3,   12.000,    0.034},     %
+ [{{filelib,compile_wildcard_2,2},                3,    9.069,    0.163},      
+  {{filename,split,1},                            3,    2.752,    0.046},      
+  {{filename,pathtype,1},                         3,    0.145,    0.025}]}.    
+
+{[{{io,read,4},                                   1,   11.900,    0.012}],     
+ { {erl_parse,parse_term,1},                      1,   11.900,    0.012},     %
+ [{{erl_parse,parse,1},                           1,   10.444,    0.004},      
+  {{erl_parse,normalise,1},                       1,    1.444,    0.141}]}.    
+
+{[{{dict,fold_seg,4},                            48,   11.615,    1.302},      
+  {{dict,fold_bucket,3},                        157,    0.000,    3.222}],     
+ { {dict,fold_bucket,3},                        205,   11.615,    4.524},     %
+ [{{dict,'-merge/3-fun-3-',4},                   17,    5.365,    0.068},      
+  {{dict,'-to_list/1-fun-0-',3},                140,    1.707,    1.707},      
+  {suspend,                                       1,    0.019,    0.000},      
+  {{dict,fold_bucket,3},                        157,    0.000,    3.222}]}.    
+
+{[{{io,o_request,3},                              1,    9.619,    0.009},      
+  {{io,read,4},                                   2,    0.995,    0.113},      
+  {{io,setopts,2},                                3,    0.368,    0.060},      
+  {{file,read,2},                                 1,    0.221,    0.044},      
+  {{io,getopts,1},                                1,    0.135,    0.049}],     
+ { {io,request,2},                                8,   11.338,    0.275},     %
+ [{{io,execute_request,2},                        8,   10.996,    0.116},      
+  {{io,io_request,2},                             8,    0.067,    0.032}]}.    
+
+{[{{re,split,3},                                 53,   11.170,    1.831}],     
+ { {re,compile_split,2},                         53,   11.170,    1.831},     %
+ [{{lists,filter,2},                            106,    6.267,    0.907},      
+  {{re,compile,2},                               53,    3.072,    0.330}]}.    
+
+{[{{re,do_grun,5},                              204,   11.066,    1.950},      
+  {{re,process_parameters,5},                   525,    0.000,    7.630}],     
+ { {re,process_parameters,5},                   729,   11.066,    9.580},     %
+ [{{re,copt,1},                                 151,    1.486,    1.486},      
+  {{re,process_parameters,5},                   525,    0.000,    7.630}]}.    
+
+{[{{io,request,2},                                8,   10.996,    0.116}],     
+ { {io,execute_request,2},                        8,   10.996,    0.116},     %
+ [{{io,wait_io_mon_reply,2},                      8,   10.845,    0.247},      
+  {{erlang,monitor,2},                            8,    0.035,    0.035}]}.    
+
+{[{{io,execute_request,2},                        8,   10.845,    0.247}],     
+ { {io,wait_io_mon_reply,2},                      8,   10.845,    0.247},     %
+ [{suspend,                                       8,   10.555,    0.000},      
+  {{erlang,demonitor,2},                          8,    0.043,    0.043}]}.    
+
+{[{{rebar_core,process_dir,4},                    1,   10.834,    0.007}],     
+ { {rebar_core,choose_module_set,2},              1,   10.834,    0.007},     %
+ [{{rebar_core,is_dir_type,2},                    1,   10.827,    0.005}]}.    
+
+{[{{rebar_core,choose_module_set,2},              1,   10.827,    0.005}],     
+ { {rebar_core,is_dir_type,2},                    1,   10.827,    0.005},     %
+ [{{error_handler,undefined_function,3},          1,    0.000,    0.015}]}.    
+
+{[{{erl_parse,parse_term,1},                      1,   10.444,    0.004}],     
+ { {erl_parse,parse,1},                           1,   10.444,    0.004},     %
+ [{{erl_parse,yeccpars0,5},                       1,   10.440,    0.007}]}.    
+
+{[{{erl_parse,parse,1},                           1,   10.440,    0.007}],     
+ { {erl_parse,yeccpars0,5},                       1,   10.440,    0.007},     %
+ [{{erl_parse,yeccpars1,5},                       1,   10.433,    0.005}]}.    
+
+{[{{erl_parse,yeccpars0,5},                       1,   10.433,    0.005}],     
+ { {erl_parse,yeccpars1,5},                       1,   10.433,    0.005},     %
+ [{{erl_parse,yeccpars2,7},                       1,   10.428,    0.003}]}.    
+
+{[{{erl_parse,yeccpars1,5},                       1,   10.428,    0.003},      
+  {{erl_parse,yeccpars1,7},                      59,    0.000,    0.453}],     
+ { {erl_parse,yeccpars2,7},                      60,   10.428,    0.456},     %
+ [{{erl_parse,yeccpars2_0,7},                     1,   10.425,    0.043},      
+  {{erl_parse,yeccpars2_10,7},                    1,   10.373,    0.003},      
+  {{erl_parse,yeccpars2_13,7},                    1,   10.363,    0.004},      
+  {{erl_parse,yeccpars2_44,7},                    1,   10.351,    0.004},      
+  {{erl_parse,yeccpars2_43,7},                   16,   10.281,    0.198},      
+  {{erl_parse,yeccpars2_64,7},                    8,   10.231,    0.127},      
+  {{erl_parse,yeccpars2_49,7},                   11,   10.167,    0.132},      
+  {{erl_parse,yeccpars2_48,7},                    5,    9.700,    0.018},      
+  {{erl_parse,yeccpars2_61,7},                    2,    9.336,    0.008},      
+  {{erl_parse,yeccpars2_67,7},                    8,    8.969,    0.163},      
+  {{erl_parse,yeccpars2_157,7},                   3,    7.148,    0.059},      
+  {{erl_parse,yeccpars2_160,7},                   2,    5.291,    0.009},      
+  {{erl_parse,yeccpars2_449,7},                   1,    0.012,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       1,   10.425,    0.043}],     
+ { {erl_parse,yeccpars2_0,7},                     1,   10.425,    0.043},     %
+ [{{erl_parse,yeccpars1,7},                       1,   10.382,    0.005}]}.    
+
+{[{{erl_parse,yeccpars2_0,7},                     1,   10.382,    0.005},      
+  {{erl_parse,yeccpars2_cont_13,7},               7,    0.000,    0.029},      
+  {{erl_parse,yeccpars2_65,7},                    8,    0.000,    0.031},      
+  {{erl_parse,yeccpars2_64,7},                    8,    0.000,    0.181},      
+  {{erl_parse,yeccpars2_6,7},                     1,    0.000,    0.012},      
+  {{erl_parse,yeccpars2_48,7},                    5,    0.000,    0.095},      
+  {{erl_parse,yeccpars2_43,7},                    9,    0.000,    0.073},      
+  {{erl_parse,yeccpars2_37,7},                    9,    0.000,    0.035},      
+  {{erl_parse,yeccpars2_281,7},                   1,    0.000,    0.004},      
+  {{erl_parse,yeccpars2_176,7},                   8,    0.000,    0.201},      
+  {{erl_parse,yeccpars2_13,7},                    1,    0.000,    0.004},      
+  {{erl_parse,yeccpars2_10,7},                    1,    0.000,    0.004}],     
+ { {erl_parse,yeccpars1,7},                      59,   10.382,    0.674},     %
+ [{{erl_parse,yecctoken_end_location,1},          1,    0.031,    0.009},      
+  {{erl_parse,yecc_end,1},                        1,    0.003,    0.003},      
+  {{erl_parse,yeccpars2,7},                      59,    0.000,    0.453}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       1,   10.373,    0.003}],     
+ { {erl_parse,yeccpars2_10,7},                    1,   10.373,    0.003},     %
+ [{{erl_parse,yeccpars1,7},                       1,    0.000,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       1,   10.363,    0.004}],     
+ { {erl_parse,yeccpars2_13,7},                    1,   10.363,    0.004},     %
+ [{{erl_parse,yeccpars1,7},                       1,    0.000,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       1,   10.351,    0.004}],     
+ { {erl_parse,yeccpars2_44,7},                    1,   10.351,    0.004},     %
+ [{{erl_parse,yeccgoto_argument_list,7},          1,   10.347,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_44,7},                    1,   10.347,    0.004}],     
+ { {erl_parse,yeccgoto_argument_list,7},          1,   10.347,    0.004},     %
+ [{{erl_parse,yeccpars2_12,7},                    1,   10.343,    0.042}]}.    
+
+{[{{erl_parse,yeccgoto_argument_list,7},          1,   10.343,    0.042}],     
+ { {erl_parse,yeccpars2_12,7},                    1,   10.343,    0.042},     %
+ [{{erl_parse,yeccgoto_clause_args,7},            1,   10.301,    0.004}]}.    
+
+{[{{rebar_port_compiler,expand_keys_in_value,3},  66,    8.667,    1.570},      
+  {{rebar_config,get_xconf,3},                    9,    0.814,    0.183},      
+  {{rebar_config,get_xconf,2},                    4,    0.482,    0.316},      
+  {{rebar_config,get_global,3},                   4,    0.360,    0.209}],     
+ { {dict,find,2},                                83,   10.323,    2.278},     %
+ [{{dict,get_slot,2},                            83,    3.960,    2.836},      
+  {{dict,find_val,2},                            83,    2.497,    0.606},      
+  {{dict,get_bucket,2},                          83,    1.588,    0.721}]}.    
+
+{[{{erl_parse,yeccpars2_12,7},                    1,   10.301,    0.004}],     
+ { {erl_parse,yeccgoto_clause_args,7},            1,   10.301,    0.004},     %
+ [{{erl_parse,yeccpars2_11,7},                    1,   10.297,    0.004}]}.    
+
+{[{{erl_parse,yeccgoto_clause_args,7},            1,   10.297,    0.004}],     
+ { {erl_parse,yeccpars2_11,7},                    1,   10.297,    0.004},     %
+ [{{erl_parse,yeccpars2_281,7},                   1,   10.293,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_11,7},                    1,   10.293,    0.004}],     
+ { {erl_parse,yeccpars2_281,7},                   1,   10.293,    0.004},     %
+ [{{erl_parse,yeccpars1,7},                       1,    0.000,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2,7},                      16,   10.281,    0.198}],     
+ { {erl_parse,yeccpars2_43,7},                   16,   10.281,    0.198},     %
+ [{{erl_parse,yeccpars2_cont_13,7},               7,    9.710,    0.099},      
+  {{erl_parse,yeccpars1,7},                       9,    0.000,    0.073}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       8,   10.231,    0.127}],     
+ { {erl_parse,yeccpars2_64,7},                    8,   10.231,    0.127},     %
+ [{{erl_parse,yeccpars1,7},                       8,    0.000,    0.181}]}.    
+
+{[{{erl_parse,yeccpars2,7},                      11,   10.167,    0.132}],     
+ { {erl_parse,yeccpars2_49,7},                   11,   10.167,    0.132},     %
+ [{{erl_parse,yeccgoto_atomic,7},                11,   10.163,    0.159}]}.    
+
+{[{{erl_parse,yeccpars2_49,7},                   11,   10.163,    0.159},      
+  {{erl_parse,yeccpars2_16,7},                    2,    0.000,    0.008}],     
+ { {erl_parse,yeccgoto_atomic,7},                13,   10.163,    0.167},     %
+ [{{erl_parse,yeccpars2_41,7},                   13,   10.159,    0.057}]}.    
+
+{[{{erl_parse,yeccgoto_atomic,7},                13,   10.159,    0.057}],     
+ { {erl_parse,yeccpars2_41,7},                   13,   10.159,    0.057},     %
+ [{{erl_parse,yeccgoto_expr_max,7},              13,   10.155,    0.191}]}.    
+
+{[{{erl_parse,yeccpars2_41,7},                   13,   10.155,    0.191},      
+  {{erl_parse,yeccpars2_21,7},                    5,    0.000,    0.116},      
+  {{erl_parse,yeccpars2_14,7},                    8,    0.000,    0.067}],     
+ { {erl_parse,yeccgoto_expr_max,7},              26,   10.155,    0.374},     %
+ [{{erl_parse,yeccpars2_26,7},                   26,   10.151,    0.307}]}.    
+
+{[{{erl_parse,yeccgoto_expr_max,7},              26,   10.151,    0.307}],     
+ { {erl_parse,yeccpars2_26,7},                   26,   10.151,    0.307},     %
+ [{{erl_parse,yeccgoto_expr_800,7},              26,   10.148,    0.411}]}.    
+
+{[{{erl_parse,yeccpars2_26,7},                   26,   10.148,    0.411}],     
+ { {erl_parse,yeccgoto_expr_800,7},              26,   10.148,    0.411},     %
+ [{{erl_parse,yeccpars2_27,7},                   26,   10.107,    0.369}]}.    
+
+{[{{io_lib_format,collect,2},                    66,   10.110,    3.770}],     
+ { {io_lib_format,collect_cseq,2},               66,   10.110,    3.770},     %
+ [{{io_lib_format,field_width,2},                66,    2.914,    1.375},      
+  {{io_lib_format,collect_cc,2},                 66,    0.789,    0.789},      
+  {{io_lib_format,encoding,2},                   66,    0.762,    0.762},      
+  {{io_lib_format,strings,2},                    66,    0.673,    0.673},      
+  {{io_lib_format,pad_char,2},                   66,    0.572,    0.572},      
+  {{io_lib_format,precision,2},                  66,    0.475,    0.475},      
+  {garbage_collect,                               2,    0.155,    0.155}]}.    
+
+{[{{erl_parse,yeccgoto_expr_800,7},              26,   10.107,    0.369}],     
+ { {erl_parse,yeccpars2_27,7},                   26,   10.107,    0.369},     %
+ [{{erl_parse,yeccgoto_expr_700,7},              26,   10.102,    0.099}]}.    
+
+{[{{erl_parse,yeccpars2_27,7},                   26,   10.102,    0.099}],     
+ { {erl_parse,yeccgoto_expr_700,7},              26,   10.102,    0.099},     %
+ [{{erl_parse,yeccpars2_28,7},                   26,   10.098,    0.133}]}.    
+
+{[{{erl_parse,yeccgoto_expr_700,7},              26,   10.098,    0.133}],     
+ { {erl_parse,yeccpars2_28,7},                   26,   10.098,    0.133},     %
+ [{{erl_parse,yeccgoto_expr_600,7},              26,   10.094,    0.221}]}.    
+
+{[{{erl_parse,yeccpars2_28,7},                   26,   10.094,    0.221}],     
+ { {erl_parse,yeccgoto_expr_600,7},              26,   10.094,    0.221},     %
+ [{{erl_parse,yeccpars2_29,7},                   26,   10.091,    0.270}]}.    
+
+{[{{erl_parse,yeccgoto_expr_600,7},              26,   10.091,    0.270}],     
+ { {erl_parse,yeccpars2_29,7},                   26,   10.091,    0.270},     %
+ [{{erl_parse,yeccgoto_expr_500,7},              26,   10.087,    0.422}]}.    
+
+{[{{erl_parse,yeccpars2_29,7},                   26,   10.087,    0.422}],     
+ { {erl_parse,yeccgoto_expr_500,7},              26,   10.087,    0.422},     %
+ [{{erl_parse,yeccpars2_30,7},                   26,   10.083,    0.402}]}.    
+
+{[{{erl_parse,yeccgoto_expr_500,7},              26,   10.083,    0.402}],     
+ { {erl_parse,yeccpars2_30,7},                   26,   10.083,    0.402},     %
+ [{{erl_parse,yeccgoto_expr_400,7},              26,   10.042,    0.106}]}.    
+
+{[{{erl_parse,yeccpars2_30,7},                   26,   10.042,    0.106}],     
+ { {erl_parse,yeccgoto_expr_400,7},              26,   10.042,    0.106},     %
+ [{{erl_parse,yeccpars2_31,7},                   26,   10.037,    0.403}]}.    
+
+{[{{erl_parse,yeccgoto_expr_400,7},              26,   10.037,    0.403}],     
+ { {erl_parse,yeccpars2_31,7},                   26,   10.037,    0.403},     %
+ [{{erl_parse,yeccgoto_expr_300,7},              26,   10.033,    0.283}]}.    
+
+{[{{erl_parse,yeccpars2_31,7},                   26,   10.033,    0.283}],     
+ { {erl_parse,yeccgoto_expr_300,7},              26,   10.033,    0.283},     %
+ [{{erl_parse,yeccpars2_32,7},                   26,   10.030,    0.298}]}.    
+
+{[{{erl_parse,yeccgoto_expr_300,7},              26,   10.030,    0.298}],     
+ { {erl_parse,yeccpars2_32,7},                   26,   10.030,    0.298},     %
+ [{{erl_parse,yeccgoto_expr_200,7},              26,   10.026,    0.130}]}.    
+
+{[{{erl_parse,yeccpars2_32,7},                   26,   10.026,    0.130}],     
+ { {erl_parse,yeccgoto_expr_200,7},              26,   10.026,    0.130},     %
+ [{{erl_parse,yeccpars2_33,7},                   26,   10.022,    0.098}]}.    
+
+{[{{erl_parse,yeccgoto_expr_200,7},              26,   10.022,    0.098}],     
+ { {erl_parse,yeccpars2_33,7},                   26,   10.022,    0.098},     %
+ [{{erl_parse,yeccgoto_expr_160,7},              26,   10.018,    0.216}]}.    
+
+{[{{erl_parse,yeccpars2_33,7},                   26,   10.018,    0.216}],     
+ { {erl_parse,yeccgoto_expr_160,7},              26,   10.018,    0.216},     %
+ [{{erl_parse,yeccpars2_34,7},                   26,    9.977,    0.294}]}.    
+
+{[{{erl_parse,yeccgoto_expr_160,7},              26,    9.977,    0.294}],     
+ { {erl_parse,yeccpars2_34,7},                   26,    9.977,    0.294},     %
+ [{{erl_parse,yeccgoto_expr_150,7},              26,    9.972,    0.336}]}.    
+
+{[{{erl_parse,yeccpars2_34,7},                   26,    9.972,    0.336}],     
+ { {erl_parse,yeccgoto_expr_150,7},              26,    9.972,    0.336},     %
+ [{{erl_parse,yeccpars2_35,7},                   26,    9.968,    0.985}]}.    
+
+{[{{erl_parse,yeccgoto_expr_150,7},              26,    9.968,    0.985}],     
+ { {erl_parse,yeccpars2_35,7},                   26,    9.968,    0.985},     %
+ [{{erl_parse,yeccgoto_expr_100,7},              26,    9.965,    0.177}]}.    
+
+{[{{erl_parse,yeccpars2_35,7},                   26,    9.965,    0.177}],     
+ { {erl_parse,yeccgoto_expr_100,7},              26,    9.965,    0.177},     %
+ [{{erl_parse,yeccpars2_36,7},                   26,    9.961,    0.178}]}.    
+
+{[{{erl_parse,yeccgoto_expr_100,7},              26,    9.961,    0.178}],     
+ { {erl_parse,yeccpars2_36,7},                   26,    9.961,    0.178},     %
+ [{{erl_parse,yeccgoto_expr,7},                  26,    9.957,    0.480}]}.    
+
+{[{{erl_parse,yeccpars2_36,7},                   26,    9.957,    0.480}],     
+ { {erl_parse,yeccgoto_expr,7},                  26,    9.957,    0.480},     %
+ [{{erl_parse,yeccpars2_37,7},                   18,    9.953,    0.121},      
+  {{erl_parse,yeccpars2_156,7},                   2,    8.682,    0.008},      
+  {{erl_parse,yeccpars2_176,7},                   6,    0.000,    0.024}]}.    
+
+{[{{erl_parse,yeccgoto_expr,7},                  18,    9.953,    0.121}],     
+ { {erl_parse,yeccpars2_37,7},                   18,    9.953,    0.121},     %
+ [{{erl_parse,yeccgoto_exprs,7},                  9,    9.030,    0.118},      
+  {{erl_parse,yeccpars1,7},                       9,    0.000,    0.035}]}.    
+
+{[{{dict,store,3},                              162,    5.319,    3.374},      
+  {{dict,find,2},                                83,    3.960,    2.836},      
+  {{dict,update,4},                              17,    0.560,    0.477},      
+  {{dict,is_key,2},                               2,    0.064,    0.054}],     
+ { {dict,get_slot,2},                           264,    9.903,    6.741},     %
+ [{{erlang,phash,2},                            264,    3.162,    3.162}]}.    
+
+{[{{re,do_grun,5},                              204,    9.824,    2.079},      
+  {{re,postprocess,5},                           21,    0.000,    0.525}],     
+ { {re,postprocess,5},                          225,    9.824,    2.604},     %
+ [{{re,listify,3},                               21,    5.686,    0.229},      
+  {{re,'-postprocess/5-lc$^0/1-0-',1},           21,    1.534,    0.530},      
+  {{re,postprocess,5},                           21,    0.000,    0.525}]}.    
+
+{[{{erl_parse,yeccpars2_43,7},                    7,    9.710,    0.099}],     
+ { {erl_parse,yeccpars2_cont_13,7},               7,    9.710,    0.099},     %
+ [{{erl_parse,yeccpars1,7},                       7,    0.000,    0.029}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       5,    9.700,    0.018}],     
+ { {erl_parse,yeccpars2_48,7},                    5,    9.700,    0.018},     %
+ [{{erl_parse,yeccpars1,7},                       5,    0.000,    0.095}]}.    
+
+{[{{rebar_core,process_commands,2},               1,    9.650,    0.008}],     
+ { {io,format,2},                                 1,    9.650,    0.008},     %
+ [{{io,format,3},                                 1,    9.631,    0.005},      
+  {{io,default_output,0},                         1,    0.011,    0.008}]}.    
+
+{[{{io,format,2},                                 1,    9.631,    0.005}],     
+ { {io,format,3},                                 1,    9.631,    0.005},     %
+ [{{io,o_request,3},                              1,    9.626,    0.007}]}.    
+
+{[{{io,format,3},                                 1,    9.626,    0.007}],     
+ { {io,o_request,3},                              1,    9.626,    0.007},     %
+ [{{io,request,2},                                1,    9.619,    0.009}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       2,    9.336,    0.008}],     
+ { {erl_parse,yeccpars2_61,7},                    2,    9.336,    0.008},     %
+ [{{erl_parse,yeccgoto_strings,7},                2,    9.332,    0.087}]}.    
+
+{[{{erl_parse,yeccpars2_61,7},                    2,    9.332,    0.087}],     
+ { {erl_parse,yeccgoto_strings,7},                2,    9.332,    0.087},     %
+ [{{erl_parse,yeccpars2_16,7},                    2,    9.291,    0.010}]}.    
+
+{[{{erl_parse,yeccgoto_strings,7},                2,    9.291,    0.010}],     
+ { {erl_parse,yeccpars2_16,7},                    2,    9.291,    0.010},     %
+ [{{erl_parse,yeccgoto_atomic,7},                 2,    0.000,    0.008}]}.    
+
+{[{{filelib,compile_wildcard,2},                  3,    9.069,    0.163},      
+  {{filelib,compile_wildcard_2,2},               19,    0.000,    0.397}],     
+ { {filelib,compile_wildcard_2,2},               22,    9.069,    0.560},     %
+ [{{filelib,compile_join,2},                     19,    6.991,    0.448},      
+  {{filelib,compile_part,1},                     22,    1.358,    0.114},      
+  {{filelib,compile_wildcard_3,2},                3,    0.160,    0.150},      
+  {{filelib,compile_wildcard_2,2},               19,    0.000,    0.397}]}.    
+
+{[{{erl_parse,yeccpars2_37,7},                    9,    9.030,    0.118},      
+  {{erl_parse,yeccpars2_225,7},                   9,    0.000,    0.040}],     
+ { {erl_parse,yeccgoto_exprs,7},                 18,    9.030,    0.158},     %
+ [{{erl_parse,yeccpars2_225,7},                   9,    8.989,    0.101},      
+  {{erl_parse,yeccpars2_65,7},                    8,    8.980,    0.067},      
+  {{erl_parse,yeccpars2_87,7},                    1,    0.133,    0.005}]}.    
+
+{[{{dict,on_bucket,3},                          162,    8.993,    1.622}],     
+ { {dict,'-store/3-fun-0-',3},                  162,    8.993,    1.622},     %
+ [{{dict,store_bkt_val,3},                      162,    7.371,    3.820}]}.    
+
+{[{{erl_parse,yeccgoto_exprs,7},                  9,    8.989,    0.101}],     
+ { {erl_parse,yeccpars2_225,7},                   9,    8.989,    0.101},     %
+ [{{erl_parse,yeccgoto_exprs,7},                  9,    0.000,    0.040}]}.    
+
+{[{{erl_parse,yeccgoto_exprs,7},                  8,    8.980,    0.067}],     
+ { {erl_parse,yeccpars2_65,7},                    8,    8.980,    0.067},     %
+ [{{erl_parse,yeccpars1,7},                       8,    0.000,    0.031}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       8,    8.969,    0.163}],     
+ { {erl_parse,yeccpars2_67,7},                    8,    8.969,    0.163},     %
+ [{{erl_parse,yeccgoto_tuple,7},                  8,    8.929,    0.119}]}.    
+
+{[{{erl_parse,yeccpars2_67,7},                    8,    8.929,    0.119}],     
+ { {erl_parse,yeccgoto_tuple,7},                  8,    8.929,    0.119},     %
+ [{{erl_parse,yeccpars2_14,7},                    8,    8.924,    0.076}]}.    
+
+{[{{erl_parse,yeccgoto_tuple,7},                  8,    8.924,    0.076}],     
+ { {erl_parse,yeccpars2_14,7},                    8,    8.924,    0.076},     %
+ [{{erl_parse,yeccgoto_expr_max,7},               8,    0.000,    0.067}]}.    
+
+{[{{erl_parse,yeccgoto_expr,7},                   2,    8.682,    0.008}],     
+ { {erl_parse,yeccpars2_156,7},                   2,    8.682,    0.008},     %
+ [{{erl_parse,yeccpars2_176,7},                   2,    8.678,    0.007}]}.    
+
+{[{{erl_parse,yeccpars2_156,7},                   2,    8.678,    0.007},      
+  {{erl_parse,yeccgoto_expr,7},                   6,    0.000,    0.024}],     
+ { {erl_parse,yeccpars2_176,7},                   8,    8.678,    0.031},     %
+ [{{erl_parse,yeccpars1,7},                       8,    0.000,    0.201}]}.    
+
+{[{{dict,on_bucket,3},                          537,    6.195,    6.195},      
+  {{dict,maybe_expand_aux,2},                   179,    2.204,    2.204},      
+  {{rebar_config,set_xconf,3},                    5,    0.060,    0.060},      
+  {{sets,on_bucket,3},                            3,    0.014,    0.014},      
+  {{rebar_config,reset_envs,1},                   2,    0.013,    0.013},      
+  {{rebar_deps,acc_deps,5},                       1,    0.007,    0.007},      
+  {{rebar_config,set,3},                          1,    0.007,    0.007},      
+  {{rebar_config,reset_skip_dirs,1},              1,    0.007,    0.007},      
+  {{rebar_config,save_env,3},                     2,    0.006,    0.006},      
+  {{sets,maybe_expand,2},                         1,    0.004,    0.004},      
+  {{rebar_config,clean_config,2},                 1,    0.004,    0.004}],     
+ { {erlang,setelement,3},                       733,    8.521,    8.521},     %
+ [ ]}.
+
+{[{{re,replace,4},                              132,    4.269,    2.419},      
+  {{re,grun2,3},                                204,    1.889,    1.889},      
+  {{re,split,3},                                 53,    1.214,    0.661}],     
+ { {re,to_binary,2},                            389,    7.372,    4.969},     %
+ [{{unicode,characters_to_binary,2},            185,    2.403,    2.403}]}.    
+
+{[{{dict,'-store/3-fun-0-',3},                  162,    7.371,    3.820},      
+  {{dict,store_bkt_val,3},                      229,    0.000,    3.551}],     
+ { {dict,store_bkt_val,3},                      391,    7.371,    7.371},     %
+ [{{dict,store_bkt_val,3},                      229,    0.000,    3.551}]}.    
+
+{[{{dict,store,3},                              162,    6.474,    1.628},      
+  {{dict,update,4},                              17,    0.821,    0.135}],     
+ { {dict,maybe_expand,2},                       179,    7.295,    1.763},     %
+ [{{dict,maybe_expand_aux,2},                   179,    5.532,    3.306}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       3,    7.148,    0.059}],     
+ { {erl_parse,yeccpars2_157,7},                   3,    7.148,    0.059},     %
+ [{{erl_parse,yeccgoto_list,7},                   3,    7.144,    0.013}]}.    
+
+{[{{erl_parse,yeccpars2_157,7},                   3,    7.144,    0.013},      
+  {{erl_parse,yeccpars2_158,7},                   2,    0.000,    0.007}],     
+ { {erl_parse,yeccgoto_list,7},                   5,    7.144,    0.020},     %
+ [{{erl_parse,yeccpars2_21,7},                    5,    7.140,    0.016}]}.    
+
+{[{{erl_parse,yeccgoto_list,7},                   5,    7.140,    0.016}],     
+ { {erl_parse,yeccpars2_21,7},                    5,    7.140,    0.016},     %
+ [{{erl_parse,yeccgoto_expr_max,7},               5,    0.000,    0.116}]}.    
+
+{[{{file,read_file_info,1},                       3,    2.904,    0.033},      
+  {{file,list_dir,1},                             3,    1.922,    0.037},      
+  {{file,set_cwd,1},                              3,    1.430,    0.035},      
+  {{file,open,2},                                 1,    0.849,    0.013}],     
+ { {file,file_name,1},                           10,    7.105,    0.118},     %
+ [{{file,file_name_1,2},                         10,    6.815,    2.228},      
+  {{file,native_name_encoding,0},                10,    0.172,    0.172}]}.    
+
+{[{{re,urun2,3},                                301,    3.638,    3.517},      
+  {{re,to_binary,2},                            185,    2.403,    2.403},      
+  {{re,ucompile,2},                              53,    1.010,    1.010},      
+  {{unicode,characters_to_binary,2},              1,    0.000,    0.005}],     
+ { {unicode,characters_to_binary,2},            540,    7.051,    6.935},     %
+ [{suspend,                                       1,    0.116,    0.000},      
+  {{unicode,characters_to_binary,2},              1,    0.000,    0.005}]}.    
+
+{[{{filelib,compile_wildcard_2,2},               19,    6.991,    0.448}],     
+ { {filelib,compile_join,2},                     19,    6.991,    0.448},     %
+ [{{filename,join,2},                            19,    6.543,    0.682}]}.    
+
+{[{{io_lib_format,fwrite,2},                     33,    6.844,    0.670}],     
+ { {io_lib_format,pcount,1},                     33,    6.844,    0.670},     %
+ [{{io_lib_format,pcount,2},                     33,    6.174,    0.189}]}.    
+
+{[{{file,file_name,1},                           10,    6.815,    2.228},      
+  {{file,file_name_1,2},                        373,    0.000,    4.580}],     
+ { {file,file_name_1,2},                        383,    6.815,    6.808},     %
+ [{{erlang,'++',2},                               2,    0.007,    0.007},      
+  {{file,file_name_1,2},                        373,    0.000,    4.580}]}.    
+
+{[{{rebar_port_compiler,apply_defaults,2},        1,    6.811,    0.019}],     
+ { {dict,merge,3},                                1,    6.811,    0.019},     %
+ [{{dict,fold_dict,3},                            1,    6.792,    0.005}]}.    
+
+{[{{rebar_port_compiler,apply_defaults,2},        1,    3.216,    0.012},      
+  {{rebar_port_compiler,expand_vars_loop,4},      1,    3.204,    0.005}],     
+ { {dict,to_list,1},                              2,    6.420,    0.017},     %
+ [{{dict,fold,3},                                 2,    6.403,    0.007}]}.    
+
+{[{{dict,to_list,1},                              2,    6.403,    0.007}],     
+ { {dict,fold,3},                                 2,    6.403,    0.007},     %
+ [{{dict,fold_dict,3},                            2,    6.396,    0.009}]}.    
+
+{[{{re,compile_split,2},                        106,    6.267,    0.907}],     
+ { {lists,filter,2},                            106,    6.267,    0.907},     %
+ [{{lists,'-filter/2-lc$^0/1-0-',2},            106,    5.360,    1.849}]}.    
+
+{[{{io_lib_format,pcount,1},                     33,    6.174,    0.189},      
+  {{io_lib_format,pcount,2},                    495,    0.000,    5.985}],     
+ { {io_lib_format,pcount,2},                    528,    6.174,    6.174},     %
+ [{{io_lib_format,pcount,2},                    495,    0.000,    5.985}]}.    
+
+{[{{re,postprocess,5},                           21,    5.686,    0.229}],     
+ { {re,listify,3},                               21,    5.686,    0.229},     %
+ [{{re,'-listify/3-lc$^0/1-0-',3},               21,    5.457,    1.283}]}.    
+
+{[{{dict,maybe_expand,2},                       179,    5.532,    3.306}],     
+ { {dict,maybe_expand_aux,2},                   179,    5.532,    3.306},     %
+ [{{erlang,setelement,3},                       179,    2.204,    2.204},      
+  {garbage_collect,                               1,    0.022,    0.022}]}.    
+
+{[{{re,listify,3},                               21,    5.457,    1.283},      
+  {{re,'-listify/3-lc$^0/1-0-',3},               66,    0.000,    0.875}],     
+ { {re,'-listify/3-lc$^0/1-0-',3},               87,    5.457,    2.158},     %
+ [{{re,'-listify/3-lc$^1/1-1-',3},               66,    3.299,    1.920},      
+  {{re,'-listify/3-lc$^0/1-0-',3},               66,    0.000,    0.875}]}.    
+
+{[{{dict,fold_bucket,3},                         17,    5.365,    0.068}],     
+ { {dict,'-merge/3-fun-3-',4},                   17,    5.365,    0.068},     %
+ [{{dict,update,4},                              17,    5.297,    0.716}]}.    
+
+{[{{lists,filter,2},                            106,    5.360,    1.849},      
+  {{lists,'-filter/2-lc$^0/1-0-',2},            106,    0.000,    0.691}],     
+ { {lists,'-filter/2-lc$^0/1-0-',2},            212,    5.360,    2.540},     %
+ [{{re,'-compile_split/2-fun-1-',1},             53,    1.649,    1.211},      
+  {{re,'-compile_split/2-fun-0-',1},             53,    1.127,    0.733},      
+  {garbage_collect,                               1,    0.044,    0.044},      
+  {{lists,'-filter/2-lc$^0/1-0-',2},            106,    0.000,    0.691}]}.    
+
+{[{{dict,'-merge/3-fun-3-',4},                   17,    5.297,    0.716}],     
+ { {dict,update,4},                              17,    5.297,    0.716},     %
+ [{{dict,on_bucket,3},                           17,    3.200,    0.802},      
+  {{dict,maybe_expand,2},                        17,    0.821,    0.135},      
+  {{dict,get_slot,2},                            17,    0.560,    0.477}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       2,    5.291,    0.009}],     
+ { {erl_parse,yeccpars2_160,7},                   2,    5.291,    0.009},     %
+ [{{erl_parse,yeccgoto_tail,7},                   2,    5.286,    0.071}]}.    
+
+{[{{erl_parse,yeccpars2_160,7},                   2,    5.286,    0.071},      
+  {{erl_parse,yeccpars2_177,7},                   6,    0.000,    0.024}],     
+ { {erl_parse,yeccgoto_tail,7},                   8,    5.286,    0.095},     %
+ [{{erl_parse,yeccpars2_177,7},                   6,    5.218,    0.123},      
+  {{erl_parse,yeccpars2_158,7},                   2,    5.207,    0.008}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             3,    5.250,    0.083},      
+  {{rebar_port_compiler,filter_env,2},           39,    0.000,    0.393}],     
+ { {rebar_port_compiler,filter_env,2},           42,    5.250,    0.476},     %
+ [{{rebar_utils,is_arch,1},                      22,    4.717,    0.480},      
+  {{lists,reverse,1},                             3,    0.057,    0.016},      
+  {{rebar_port_compiler,filter_env,2},           39,    0.000,    0.393}]}.    
+
+{[{{erl_parse,yeccgoto_tail,7},                   6,    5.218,    0.123}],     
+ { {erl_parse,yeccpars2_177,7},                   6,    5.218,    0.123},     %
+ [{{erl_parse,yeccgoto_tail,7},                   6,    0.000,    0.024}]}.    
+
+{[{{erl_parse,yeccgoto_tail,7},                   2,    5.207,    0.008}],     
+ { {erl_parse,yeccpars2_158,7},                   2,    5.207,    0.008},     %
+ [{{erl_parse,yeccgoto_list,7},                   2,    0.000,    0.007}]}.    
+
+{[{{filelib,do_wildcard,3},                       3,    4.908,    0.047}],     
+ { {filelib,do_wildcard_1,2},                     3,    4.908,    0.047},     %
+ [{{filelib,do_wildcard_2,4},                     3,    4.861,    0.059}]}.    
+
+{[{{filelib,do_wildcard_1,2},                     3,    4.861,    0.059},      
+  {{filelib,do_wildcard_3,4},                     1,    0.000,    0.004},      
+  {{filelib,do_wildcard_2,4},                     4,    0.000,    0.012}],     
+ { {filelib,do_wildcard_2,4},                     8,    4.861,    0.075},     %
+ [{{filelib,do_wildcard_3,4},                     4,    4.790,    0.030},      
+  {{filelib,do_wildcard_2,4},                     4,    0.000,    0.012}]}.    
+
+{[{{filelib,do_wildcard_2,4},                     4,    4.790,    0.030}],     
+ { {filelib,do_wildcard_3,4},                     4,    4.790,    0.030},     %
+ [{{filelib,do_list_dir,2},                       3,    3.209,    0.011},      
+  {{filelib,do_wildcard_4,3},                     1,    1.118,    0.008},      
+  {{filelib,prepare_base,1},                      1,    0.429,    0.016},      
+  {{filelib,do_wildcard_2,4},                     1,    0.000,    0.004}]}.    
+
+{[{{re,replace,4},                               66,    4.780,    2.198},      
+  {{re,process_repl_params,3},                  198,    0.000,    2.574}],     
+ { {re,process_repl_params,3},                  264,    4.780,    4.772},     %
+ [{suspend,                                       1,    0.008,    0.000},      
+  {{re,process_repl_params,3},                  198,    0.000,    2.574}]}.    
+
+{[{{rebar_port_compiler,filter_env,2},           22,    4.717,    0.480}],     
+ { {rebar_utils,is_arch,1},                      22,    4.717,    0.480},     %
+ [{{rebar_utils,get_arch,0},                     22,    3.805,    1.670},      
+  {{re,run,3},                                   22,    0.432,    0.432}]}.    
+
+{[{{re,split,3},                                 53,    4.477,    2.330},      
+  {{re,do_split,6},                              53,    0.000,    0.383}],     
+ { {re,do_split,6},                             106,    4.477,    2.713},     %
+ [{{lists,reverse,1},                            53,    0.780,    0.780},      
+  {{re,extend_subpatterns,2},                    53,    0.407,    0.407},      
+  {{re,empty_sub,1},                             53,    0.395,    0.395},      
+  {{re,dig_subpatterns,3},                       53,    0.173,    0.173},      
+  {suspend,                                       1,    0.009,    0.000},      
+  {{re,do_split,6},                              53,    0.000,    0.383}]}.    
+
+{[{{filename,maybe_remove_dirsep,2},            100,    2.484,    1.411},      
+  {{re,do_split,6},                              53,    0.780,    0.780},      
+  {{filename,split,4},                           25,    0.372,    0.291},      
+  {{filelib,compile_part,3},                     22,    0.344,    0.265},      
+  {{rebar_utils,expand_code_path,0},              1,    0.210,    0.168},      
+  {{rebar_port_compiler,filter_env,2},            3,    0.057,    0.016},      
+  {{rebar_config,local_opts,2},                   4,    0.049,    0.049},      
+  {{rebar_core,select_modules,3},                 6,    0.022,    0.022},      
+  {{filelib,prepare_base,1},                      2,    0.022,    0.015},      
+  {{filelib,compile_wildcard_3,2},                3,    0.010,    0.010},      
+  {{rebar_deps,find_deps,4},                      2,    0.007,    0.007},      
+  {{file,consult_stream,3},                       1,    0.004,    0.004},      
+  {{rebar_core,ulist,2},                          1,    0.003,    0.003}],     
+ { {lists,reverse,1},                           223,    4.364,    3.041},     %
+ [{{lists,reverse,2},                           151,    1.323,    1.323}]}.    
+
+{[{{filename,absname,2},                         60,    2.817,    1.016},      
+  {{filename,join,2},                            33,    1.334,    0.379},      
+  {{filelib,compile_wildcard,2},                  3,    0.145,    0.025}],     
+ { {filename,pathtype,1},                        96,    4.296,    1.420},     %
+ [{{os,type,0},                                  96,    1.755,    1.249},      
+  {{filename,unix_pathtype,1},                   96,    1.121,    1.121}]}.    
+
+{[{{re,split,3},                                 53,    4.085,    0.389}],     
+ { {re,convert_any_split_result,4},              53,    4.085,    0.389},     %
+ [{{re,convert_split_result,3},                  53,    3.696,    0.243}]}.    
+
+{[{{rebar,run_aux,2},                             1,    4.067,    0.034}],     
+ { {rebar,init_config1,1},                        1,    4.067,    0.034},     %
+ [{{filename,absname,1},                          2,    2.746,    0.017},      
+  {{rebar_config,set_xconf,3},                    2,    0.529,    0.103},      
+  {{escript,script_name,0},                       1,    0.415,    0.051},      
+  {{rebar_utils,get_cwd,0},                       1,    0.272,    0.007},      
+  {{rebar_log,log,3},                             1,    0.071,    0.051}]}.    
+
+{[{{rebar_utils,is_arch,1},                      22,    3.805,    1.670},      
+  {{rebar_port_compiler,default_env,0},           1,    0.243,    0.054}],     
+ { {rebar_utils,get_arch,0},                     23,    4.048,    1.724},     %
+ [{{rebar_utils,wordsize,0},                     23,    1.479,    0.839},      
+  {{erlang,system_info,1},                       46,    0.484,    0.484},      
+  {{erlang,'++',2},                              46,    0.272,    0.272},      
+  {garbage_collect,                               1,    0.089,    0.089}]}.    
+
+{[{{filelib,do_is_regular,2},                     2,    3.166,    0.008},      
+  {{filelib,do_is_dir,2},                         1,    0.866,    0.004}],     
+ { {filelib,eval_read_file_info,2},               3,    4.032,    0.012},     %
+ [{{file,read_file_info,1},                       3,    4.020,    0.094}]}.    
+
+{[{{filelib,eval_read_file_info,2},               3,    4.020,    0.094}],     
+ { {file,read_file_info,1},                       3,    4.020,    0.094},     %
+ [{{file,file_name,1},                            3,    2.904,    0.033},      
+  {{file,check_and_call,2},                       3,    1.022,    0.028}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    3.508,    0.028},      
+  {{rebar_core,execute_plugin_hook,6},            2,    0.345,    0.215}],     
+ { {rebar_core,execute,5},                        3,    3.853,    0.243},     %
+ [{{rebar_core,select_modules,3},                 3,    3.085,    0.151},      
+  {{rebar_utils,get_cwd,0},                       1,    0.368,    0.008},      
+  {{lists,prefix,2},                              5,    0.110,    0.022},      
+  {{rebar_log,log,3},                             1,    0.036,    0.011},      
+  {{erlang,atom_to_list,1},                       3,    0.011,    0.011}]}.    
+
+{[{{filename,major_os_type,0},                  101,    1.972,    1.286},      
+  {{filename,pathtype,1},                        96,    1.755,    1.249},      
+  {{rebar_deps,setup_env,1},                      1,    0.041,    0.038},      
+  {{filename,split,1},                            3,    0.032,    0.021}],     
+ { {os,type,0},                                 201,    3.800,    2.594},     %
+ [{{erlang,system_info,1},                      201,    1.206,    1.206}]}.    
+
+{[{{re,convert_any_split_result,4},              53,    3.696,    0.243}],     
+ { {re,convert_split_result,3},                  53,    3.696,    0.243},     %
+ [{{re,'-convert_split_result/3-lc$^0/1-1-',1},  53,    3.453,    1.628}]}.    
+
+{[{{filename,join,1},                            67,    2.642,    1.232},      
+  {{filename,join,2},                            33,    0.970,    0.418},      
+  {{filename,extension,1},                        1,    0.018,    0.008}],     
+ { {filename,major_os_type,0},                  101,    3.630,    1.658},     %
+ [{{os,type,0},                                 101,    1.972,    1.286}]}.    
+
+{[{{re,apply_mlist,3},                           22,    3.626,    0.810},      
+  {{re,do_mlist,5},                              36,    0.000,    0.830}],     
+ { {re,do_mlist,5},                              58,    3.626,    1.640},     %
+ [{{re,do_replace,3},                            22,    1.963,    0.455},      
+  {suspend,                                       1,    0.023,    0.000},      
+  {{re,do_mlist,5},                              36,    0.000,    0.830}]}.    
+
+{[{{re,convert_split_result,3},                  53,    3.453,    1.628},      
+  {{re,'-convert_split_result/3-lc$^0/1-1-',1}, 106,    0.000,    1.075}],     
+ { {re,'-convert_split_result/3-lc$^0/1-1-',1}, 159,    3.453,    2.703},     %
+ [{{unicode,characters_to_list,2},              106,    0.728,    0.728},      
+  {garbage_collect,                               1,    0.022,    0.022},      
+  {{re,'-convert_split_result/3-lc$^0/1-1-',1}, 106,    0.000,    1.075}]}.    
+
+{[{{file,list_dir,1},                             3,    1.240,    0.024},      
+  {{file,set_cwd,1},                              3,    1.082,    0.029},      
+  {{file,read_file_info,1},                       3,    1.022,    0.028}],     
+ { {file,check_and_call,2},                       9,    3.344,    0.081},     %
+ [{{file,call,2},                                 9,    3.083,    0.323},      
+  {{file,check_args,1},                           9,    0.180,    0.112}]}.    
+
+{[{{re,'-listify/3-lc$^0/1-0-',3},               66,    3.299,    1.920},      
+  {{re,'-listify/3-lc$^1/1-1-',3},               66,    0.000,    0.475}],     
+ { {re,'-listify/3-lc$^1/1-1-',3},              132,    3.299,    2.395},     %
+ [{{unicode,characters_to_list,2},               66,    0.885,    0.885},      
+  {garbage_collect,                               1,    0.019,    0.019},      
+  {{re,'-listify/3-lc$^1/1-1-',3},               66,    0.000,    0.475}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,4},      1,    3.297,    0.004}],     
+ { {lists,keysort,2},                             1,    3.297,    0.004},     %
+ [{{lists,keysplit_2,8},                          1,    3.293,    0.043}]}.    
+
+{[{{lists,keysort,2},                             1,    3.293,    0.043},      
+  {{lists,keysplit_2_1,10},                      13,    0.000,    0.047},      
+  {{lists,keysplit_2,8},                         38,    0.000,    0.464}],     
+ { {lists,keysplit_2,8},                         52,    3.293,    0.554},     %
+ [{{lists,keysplit_2_1,10},                      13,    3.241,    0.221},      
+  {{lists,keymergel,4},                           1,    2.501,    0.012},      
+  {{lists,keysplit_2,8},                         38,    0.000,    0.464}]}.    
+
+{[{{filename,join1,4},                          100,    3.275,    0.791}],     
+ { {filename,maybe_remove_dirsep,2},            100,    3.275,    0.791},     %
+ [{{lists,reverse,1},                           100,    2.484,    1.411}]}.    
+
+{[{{re,urun2,3},                                151,    3.261,    1.322}],     
+ { {re,process_uparams,2},                      151,    3.261,    1.322},     %
+ [{{erlang,throw,1},                            151,    1.939,    1.939}]}.    
+
+{[{{lists,keysplit_2,8},                         13,    3.241,    0.221},      
+  {{lists,keysplit_2_1,10},                       4,    0.000,    0.017}],     
+ { {lists,keysplit_2_1,10},                      17,    3.241,    0.238},     %
+ [{{lists,keysplit_2_1,10},                       4,    0.000,    0.017},      
+  {{lists,keysplit_2,8},                         13,    0.000,    0.047}]}.    
+
+{[{{filelib,do_wildcard_3,4},                     3,    3.209,    0.011}],     
+ { {filelib,do_list_dir,2},                       3,    3.209,    0.011},     %
+ [{{filelib,eval_list_dir,2},                     3,    3.198,    0.012}]}.    
+
+{[{{filelib,do_list_dir,2},                       3,    3.198,    0.012}],     
+ { {filelib,eval_list_dir,2},                     3,    3.198,    0.012},     %
+ [{{file,list_dir,1},                             3,    3.186,    0.024}]}.    
+
+{[{{rebar_app_utils,consult_app_file,1},          1,    1.756,    0.004},      
+  {{rebar_config,consult_file,1},                 1,    1.431,    0.003}],     
+ { {filelib,is_regular,1},                        2,    3.187,    0.007},     %
+ [{{filelib,do_is_regular,2},                     2,    3.180,    0.014}]}.    
+
+{[{{filelib,eval_list_dir,2},                     3,    3.186,    0.024}],     
+ { {file,list_dir,1},                             3,    3.186,    0.024},     %
+ [{{file,file_name,1},                            3,    1.922,    0.037},      
+  {{file,check_and_call,2},                       3,    1.240,    0.024}]}.    
+
+{[{{filelib,is_regular,1},                        2,    3.180,    0.014}],     
+ { {filelib,do_is_regular,2},                     2,    3.180,    0.014},     %
+ [{{filelib,eval_read_file_info,2},               2,    3.166,    0.008}]}.    
+
+{[{{rebar_deps,find_dep,3},                       1,    1.678,    0.013},      
+  {{rebar_deps,get_deps_dir,1},                   1,    1.501,    0.016}],     
+ { {rebar_deps,get_deps_dir,2},                   2,    3.179,    0.029},     %
+ [{{filename,join,1},                             2,    2.773,    0.052},      
+  {{rebar_deps,get_shared_deps_dir,2},            2,    0.217,    0.008},      
+  {{rebar_config,get_xconf,3},                    2,    0.160,    0.049}]}.    
+
+{[{{dict,get_slot,2},                           264,    3.162,    3.162},      
+  {{sets,get_slot,2},                             1,    0.005,    0.005}],     
+ { {erlang,phash,2},                            265,    3.167,    3.167},     %
+ [ ]}.
+
+{[{{re,compile_split,2},                         53,    3.072,    0.330},      
+  {{re,ucompile,2},                              53,    0.000,    0.617}],     
+ { {re,compile,2},                              106,    3.072,    0.947},     %
+ [{{re,ucompile,2},                              53,    2.742,    1.115}]}.    
+
+{[{{io_lib_format,collect_cseq,2},               66,    2.914,    1.375}],     
+ { {io_lib_format,field_width,2},                66,    2.914,    1.375},     %
+ [{{io_lib_format,field_value,2},                66,    0.801,    0.801},      
+  {{io_lib_format,field_width,3},                66,    0.738,    0.738}]}.    
+
+{[{{filelib,compile_wildcard,2},                  3,    2.752,    0.046}],     
+ { {filename,split,1},                            3,    2.752,    0.046},     %
+ [{{filename,flatten,1},                          3,    1.453,    0.011},      
+  {{filename,unix_split,1},                       3,    1.221,    0.054},      
+  {{os,type,0},                                   3,    0.032,    0.021}]}.    
+
+{[{{re,compile,2},                               53,    2.742,    1.115}],     
+ { {re,ucompile,2},                              53,    2.742,    1.115},     %
+ [{{unicode,characters_to_binary,2},             53,    1.010,    1.010},      
+  {{re,compile,2},                               53,    0.000,    0.617}]}.    
+
+{[{{rebar_core,process_dir1,6},                   2,    1.554,    0.019},      
+  {{rebar_core,process_dir,4},                    1,    1.029,    0.052}],     
+ { {file,set_cwd,1},                              3,    2.583,    0.071},     %
+ [{{file,file_name,1},                            3,    1.430,    0.035},      
+  {{file,check_and_call,2},                       3,    1.082,    0.029}]}.    
+
+{[{{lists,keysplit_2,8},                          1,    2.501,    0.012},      
+  {{lists,rkeymergel,4},                          2,    0.000,    0.010},      
+  {{lists,keymergel,4},                           6,    0.000,    0.122}],     
+ { {lists,keymergel,4},                           9,    2.501,    0.144},     %
+ [{{lists,rkeymergel,4},                          2,    1.791,    0.016},      
+  {{lists,keymerge2_1,6},                         2,    0.742,    0.009},      
+  {{lists,keymerge3_1,10},                        4,    0.505,    0.019},      
+  {{lists,keymergel,4},                           6,    0.000,    0.122}]}.    
+
+{[{{dict,find,2},                                83,    2.497,    0.606},      
+  {{dict,find_val,2},                           165,    0.000,    1.891}],     
+ { {dict,find_val,2},                           248,    2.497,    2.497},     %
+ [{{dict,find_val,2},                           165,    0.000,    1.891}]}.    
+
+{[{{re,'-listify/3-lc$^1/1-1-',3},               66,    0.885,    0.885},      
+  {{re,replace,4},                               66,    0.785,    0.785},      
+  {{re,'-convert_split_result/3-lc$^0/1-1-',1}, 106,    0.728,    0.728},      
+  {{init,b2s,1},                                  3,    0.055,    0.055}],     
+ { {unicode,characters_to_list,2},              241,    2.453,    2.453},     %
+ [ ]}.
+
+{[{{os,type,0},                                 201,    1.206,    1.206},      
+  {{rebar_utils,get_arch,0},                     46,    0.484,    0.484},      
+  {{rebar_utils,wordsize,0},                     24,    0.476,    0.476},      
+  {{rebar_port_compiler,erts_dir,0},              1,    0.004,    0.004}],     
+ { {erlang,system_info,1},                      272,    2.170,    2.170},     %
+ [ ]}.
+
+{[{{re,do_mlist,5},                              22,    1.963,    0.455}],     
+ { {re,do_replace,3},                            22,    1.963,    0.455},     %
+ [{{re,'-do_replace/3-lc$^0/1-0-',3},            22,    1.263,    0.525},      
+  {{erlang,list_to_tuple,1},                     22,    0.245,    0.245}]}.    
+
+{[{{re,process_uparams,2},                      151,    1.939,    1.939},      
+  {{rebar_utils,abort,0},                         1,    0.009,    0.009},      
+  {{epp,com_nl,4},                                1,    0.005,    0.005}],     
+ { {erlang,throw,1},                            153,    1.953,    1.953},     %
+ [{suspend,                                       1,    0.000,    0.000}]}.    
+
+{[{{re,grun2,3},                                204,    1.951,    1.951}],     
+ { {re,check_for_unicode,2},                    204,    1.951,    1.951},     %
+ [ ]}.
+
+{[{{re,process_parameters,5},                   151,    1.486,    1.486},      
+  {{re,'-compile_split/2-fun-1-',1},             53,    0.438,    0.438}],     
+ { {re,copt,1},                                 204,    1.924,    1.924},     %
+ [ ]}.
+
+{[{{re,split,3},                                 53,    1.899,    0.245},      
+  {{re,process_split_params,6},                 159,    0.000,    1.654}],     
+ { {re,process_split_params,6},                 212,    1.899,    1.899},     %
+ [{{re,process_split_params,6},                 159,    0.000,    1.654}]}.    
+
+{[{{file,call,2},                                74,    1.226,    1.226},      
+  {{rebar_port_compiler,'-os_env/0-lc$^0/1-0-',1},  53,    0.259,    0.259},      
+  {{re,do_replace,3},                            22,    0.245,    0.245},      
+  {{erl_parse,normalise,1},                       8,    0.069,    0.069}],     
+ { {erlang,list_to_tuple,1},                    157,    1.799,    1.799},     %
+ [ ]}.
+
+{[{{lists,keymergel,4},                           2,    1.791,    0.016},      
+  {{lists,rkeymergel,4},                          2,    0.000,    0.013}],     
+ { {lists,rkeymergel,4},                          4,    1.791,    0.029},     %
+ [{{lists,rkeymerge3_1,10},                       1,    0.589,    0.097},      
+  {{lists,rkeymerge2_1,6},                        1,    0.488,    0.004},      
+  {{lists,reverse,2},                             1,    0.004,    0.004},      
+  {{lists,rkeymergel,4},                          2,    0.000,    0.013},      
+  {{lists,keymergel,4},                           2,    0.000,    0.010}]}.    
+
+{[{{dict,on_bucket,3},                           17,    1.729,    0.158}],     
+ { {dict,'-update/4-fun-0-',4},                  17,    1.729,    0.158},     %
+ [{{dict,update_bkt,4},                          17,    1.571,    0.325}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,4},     21,    1.708,    0.641},      
+  {{rebar_port_compiler,'-expand_vars_loop/4-lc$^0/1-0-',1},  66,    0.000,    1.067}],     
+ { {rebar_port_compiler,'-expand_vars_loop/4-lc$^0/1-0-',1},  87,    1.708,    1.708},     %
+ [{{rebar_port_compiler,'-expand_vars_loop/4-lc$^0/1-0-',1},  66,    0.000,    1.067}]}.    
+
+{[{{dict,fold_bucket,3},                        140,    1.707,    1.707}],     
+ { {dict,'-to_list/1-fun-0-',3},                140,    1.707,    1.707},     %
+ [ ]}.
+
+{[{{lists,'-filter/2-lc$^0/1-0-',2},             53,    1.649,    1.211}],     
+ { {re,'-compile_split/2-fun-1-',1},             53,    1.649,    1.211},     %
+ [{{re,copt,1},                                  53,    0.438,    0.438}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,    1.637,    0.070}],     
+ { {rebar_port_compiler,default_env,0},           1,    1.637,    0.070},     %
+ [{{filename,join,2},                             1,    0.542,    0.011},      
+  {{lists,concat,1},                              1,    0.287,    0.004},      
+  {{rebar_port_compiler,erts_dir,0},              1,    0.274,    0.028},      
+  {{rebar_utils,get_arch,0},                      1,    0.243,    0.054},      
+  {{rebar_port_compiler,erl_interface_dir,1},     2,    0.162,    0.014},      
+  {{rebar_utils,wordsize,0},                      1,    0.059,    0.049}]}.    
+
+{[{{rebar_core,'-setup_envs/2-fun-0-',2},         1,    1.603,    0.016}],     
+ { {rebar_deps,setup_env,1},                      1,    1.603,    0.016},     %
+ [{{rebar_deps,get_deps_dir,1},                   1,    1.539,    0.038},      
+  {{os,type,0},                                   1,    0.041,    0.038},      
+  {{os,getenv,1},                                 1,    0.007,    0.007}]}.    
+
+{[{{dict,find,2},                                83,    1.588,    0.721},      
+  {{dict,is_key,2},                               2,    0.015,    0.007}],     
+ { {dict,get_bucket,2},                          85,    1.603,    0.728},     %
+ [{{dict,get_bucket_s,2},                        85,    0.875,    0.875}]}.    
+
+{[{{dict,'-update/4-fun-0-',4},                  17,    1.571,    0.325},      
+  {{dict,update_bkt,4},                          64,    0.000,    1.246}],     
+ { {dict,update_bkt,4},                          81,    1.571,    1.571},     %
+ [{{dict,update_bkt,4},                          64,    0.000,    1.246}]}.    
+
+{[{{file,consult_stream,1},                       1,    1.566,    0.051}],     
+ { {epp,set_encoding,1},                          1,    1.566,    0.051},     %
+ [{{epp,read_encoding_from_file,2},               1,    1.377,    0.078},      
+  {{io,setopts,2},                                1,    0.135,    0.041},      
+  {{epp,default_encoding,0},                      1,    0.003,    0.003}]}.    
+
+{[{{rebar_deps,setup_env,1},                      1,    1.539,    0.038}],     
+ { {rebar_deps,get_deps_dir,1},                   1,    1.539,    0.038},     %
+ [{{rebar_deps,get_deps_dir,2},                   1,    1.501,    0.016}]}.    
+
+{[{{rebar_utils,get_arch,0},                     23,    1.479,    0.839},      
+  {{rebar_port_compiler,default_env,0},           1,    0.059,    0.049}],     
+ { {rebar_utils,wordsize,0},                     24,    1.538,    0.888},     %
+ [{{erlang,system_info,1},                       24,    0.476,    0.476},      
+  {{erlang,integer_to_list,1},                   24,    0.174,    0.174}]}.    
+
+{[{{re,postprocess,5},                           21,    1.534,    0.530},      
+  {{re,'-postprocess/5-lc$^0/1-0-',1},           66,    0.000,    1.004}],     
+ { {re,'-postprocess/5-lc$^0/1-0-',1},           87,    1.534,    1.534},     %
+ [{{re,'-postprocess/5-lc$^0/1-0-',1},           66,    0.000,    1.004}]}.    
+
+{[{{erl_parse,parse_term,1},                      1,    1.444,    0.141},      
+  {{erl_parse,normalise_list,1},                 17,    0.000,    0.069},      
+  {{erl_parse,normalise,1},                      16,    0.000,    0.482}],     
+ { {erl_parse,normalise,1},                      34,    1.444,    0.692},     %
+ [{{erl_parse,normalise_list,1},                  8,    0.879,    0.446},      
+  {{erlang,list_to_tuple,1},                      8,    0.069,    0.069},      
+  {{erl_parse,normalise,1},                      16,    0.000,    0.482}]}.    
+
+{[{{lists,reverse,1},                           151,    1.323,    1.323},      
+  {{lists,rumergel,3},                            7,    0.069,    0.069},      
+  {{lists,keymerge2_1,6},                         4,    0.016,    0.016},      
+  {{lists,rumerge2_2,5},                          2,    0.010,    0.010},      
+  {{lists,rkeymerge2_1,6},                        2,    0.007,    0.007},      
+  {{lists,keymerge2_2,7},                         2,    0.006,    0.006},      
+  {{lists,umerge2_1,5},                           1,    0.004,    0.004},      
+  {{lists,rkeymergel,4},                          1,    0.004,    0.004}],     
+ { {lists,reverse,2},                           170,    1.439,    1.439},     %
+ [ ]}.
+
+{[{{rebar,init_config1,1},                        2,    0.529,    0.103},      
+  {{rebar_deps,set_shared_deps_dir,2},            1,    0.316,    0.010},      
+  {{rebar_app_utils,load_app_file,2},             1,    0.299,    0.011},      
+  {{rebar_core,process_commands,2},               1,    0.292,    0.013}],     
+ { {rebar_config,set_xconf,3},                    5,    1.436,    0.137},     %
+ [{{dict,store,3},                                5,    1.239,    0.162},      
+  {{erlang,setelement,3},                         5,    0.060,    0.060}]}.    
+
+{[{{epp,set_encoding,1},                          1,    1.377,    0.078}],     
+ { {epp,read_encoding_from_file,2},               1,    1.377,    0.078},     %
+ [{{file,position,2},                             2,    0.385,    0.008},      
+  {{io,setopts,2},                                2,    0.282,    0.008},      
+  {{epp,'-reader/2-fun-0-',2},                    1,    0.245,    0.011},      
+  {{epp,com_nl,4},                                1,    0.238,    0.003},      
+  {{io,getopts,1},                                1,    0.139,    0.004},      
+  {{lists,keyfind,3},                             2,    0.006,    0.006},      
+  {{epp,reader,2},                                1,    0.004,    0.004}]}.    
+
+{[{{filelib,compile_wildcard_2,2},               22,    1.358,    0.114}],     
+ { {filelib,compile_part,1},                     22,    1.358,    0.114},     %
+ [{{filelib,compile_part,3},                     22,    1.244,    0.121}]}.    
+
+{[{{file,consult,1},                              1,    1.325,    0.022}],     
+ { {file,open,2},                                 1,    1.325,    0.022},     %
+ [{{file,file_name,1},                            1,    0.849,    0.013},      
+  {{file,call,2},                                 1,    0.436,    0.010},      
+  {{file,check_args,1},                           1,    0.011,    0.004},      
+  {{lists,member,2},                              2,    0.007,    0.007}]}.    
+
+{[{{rebar_core,execute,5},                        1,    0.368,    0.008},      
+  {{rebar_subdirs,preprocess,2},                  1,    0.347,    0.040},      
+  {{rebar_core,process_commands,2},               1,    0.336,    0.050},      
+  {{rebar,init_config1,1},                        1,    0.272,    0.007}],     
+ { {rebar_utils,get_cwd,0},                       4,    1.323,    0.105},     %
+ [{{file,get_cwd,0},                              4,    1.218,    0.026}]}.    
+
+{[{{re,do_replace,3},                            22,    1.263,    0.525},      
+  {{re,'-do_replace/3-lc$^0/1-0-',3},            44,    0.000,    0.738}],     
+ { {re,'-do_replace/3-lc$^0/1-0-',3},            66,    1.263,    1.263},     %
+ [{{re,'-do_replace/3-lc$^0/1-0-',3},            44,    0.000,    0.738}]}.    
+
+{[{{filelib,compile_part,1},                     22,    1.244,    0.121},      
+  {{filelib,compile_part,3},                    116,    0.000,    0.779}],     
+ { {filelib,compile_part,3},                    138,    1.244,    0.900},     %
+ [{{lists,reverse,1},                            22,    0.344,    0.265},      
+  {{filelib,compile_part,3},                    116,    0.000,    0.779}]}.    
+
+{[{{filename,split,1},                            3,    1.221,    0.054}],     
+ { {filename,unix_split,1},                       3,    1.221,    0.054},     %
+ [{{filename,split,3},                            3,    1.167,    0.013}]}.    
+
+{[{{filename,unix_split,1},                       3,    1.167,    0.013}],     
+ { {filename,split,3},                            3,    1.167,    0.013},     %
+ [{{filename,split,4},                            3,    1.154,    0.010}]}.    
+
+{[{{rebar_config,consult_file,1},                 1,    1.155,    0.012}],     
+ { {filename,extension,1},                        1,    1.155,    0.012},     %
+ [{{filename,flatten,1},                          1,    0.705,    0.004},      
+  {{filename,extension,3},                        1,    0.420,    0.004},      
+  {{filename,major_os_type,0},                    1,    0.018,    0.008}]}.    
+
+{[{{filename,split,3},                            3,    1.154,    0.010},      
+  {{filename,split,4},                          138,    0.000,    0.772}],     
+ { {filename,split,4},                          141,    1.154,    0.782},     %
+ [{{lists,reverse,1},                            25,    0.372,    0.291},      
+  {{filename,split,4},                          138,    0.000,    0.772}]}.    
+
+{[{{lists,'-filter/2-lc$^0/1-0-',2},             53,    1.127,    0.733}],     
+ { {re,'-compile_split/2-fun-0-',1},             53,    1.127,    0.733},     %
+ [{{re,runopt,1},                                53,    0.394,    0.394}]}.    
+
+{[{{filename,pathtype,1},                        96,    1.121,    1.121}],     
+ { {filename,unix_pathtype,1},                   96,    1.121,    1.121},     %
+ [ ]}.
+
+{[{{filelib,do_wildcard_3,4},                     1,    1.118,    0.008}],     
+ { {filelib,do_wildcard_4,3},                     1,    1.118,    0.008},     %
+ [{{filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     1,    1.106,    0.008},      
+  {{filelib,will_always_match,1},                 1,    0.004,    0.004}]}.    
+
+{[{{rebar_core,acc_modules,5},                    1,    1.108,    0.142}],     
+ { {rebar_subdirs,preprocess,2},                  1,    1.108,    0.142},     %
+ [{{rebar_subdirs,check_loop,1},                  1,    0.477,    0.009},      
+  {{rebar_utils,get_cwd,0},                       1,    0.347,    0.040},      
+  {{rebar_config,get_local,3},                    1,    0.073,    0.008},      
+  {{rebar_config,is_skip_dir,2},                  1,    0.053,    0.005},      
+  {{rebar_subdirs,'-preprocess/2-lc$^0/1-0-',2},   1,    0.005,    0.005},      
+  {{lists,foreach,2},                             1,    0.004,    0.004},      
+  {{erlang,make_fun,3},                           1,    0.004,    0.004},      
+  {{lists,flatmap,2},                             1,    0.003,    0.003}]}.    
+
+{[{{filelib,do_wildcard_4,3},                     1,    1.106,    0.008},      
+  {{filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     4,    0.000,    0.083}],     
+ { {filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     5,    1.106,    0.091},     %
+ [{{filelib,match_part,2},                        4,    1.011,    0.016},      
+  {{erlang,'++',2},                               1,    0.004,    0.004},      
+  {{filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     4,    0.000,    0.083}]}.    
+
+{[{{rebar_port_compiler,expand_vars_loop,4},     21,    1.081,    0.122}],     
+ { {lists,usort,1},                              21,    1.081,    0.122},     %
+ [{{lists,usplit_1,5},                            8,    0.893,    0.034},      
+  {{lists,usplit_2,5},                            1,    0.066,    0.004}]}.    
+
+{[{{filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     4,    1.011,    0.016},      
+  {{filelib,match_part,2},                       11,    0.000,    0.044},      
+  {{filelib,do_star,2},                          49,    0.000,    0.294}],     
+ { {filelib,match_part,2},                       64,    1.011,    0.354},     %
+ [{{filelib,do_star,2},                           4,    0.995,    0.031},      
+  {{filelib,match_part,2},                       11,    0.000,    0.044}]}.    
+
+{[{{filelib,match_part,2},                        4,    0.995,    0.031},      
+  {{filelib,do_star,2},                          45,    0.000,    0.626}],     
+ { {filelib,do_star,2},                          49,    0.995,    0.657},     %
+ [{{filelib,match_part,2},                       49,    0.000,    0.294},      
+  {{filelib,do_star,2},                          45,    0.000,    0.626}]}.    
+
+{[{{io_lib_format,collect_cseq,2},                2,    0.155,    0.155},      
+  {{filename,do_flatten,2},                       4,    0.130,    0.130},      
+  {{rebar_utils,get_arch,0},                      1,    0.089,    0.089},      
+  {{re,replace,4},                                1,    0.082,    0.082},      
+  {{io_lib_format,build,3},                       1,    0.071,    0.071},      
+  {{io_lib_format,iolist_to_chars,1},             1,    0.066,    0.066},      
+  {{re,urun,3},                                   1,    0.063,    0.063},      
+  {{gen,do_call,4},                               2,    0.054,    0.054},      
+  {{re,precomp_repl,1},                           2,    0.046,    0.046},      
+  {{dict,on_bucket,3},                            1,    0.046,    0.046},      
+  {{lists,'-filter/2-lc$^0/1-0-',2},              1,    0.044,    0.044},      
+  {{rebar_port_compiler,os_env,0},                1,    0.039,    0.039},      
+  {{re,loopexec,6},                               2,    0.029,    0.029},      
+  {{re,'-convert_split_result/3-lc$^0/1-1-',1},   1,    0.022,    0.022},      
+  {{dict,maybe_expand_aux,2},                     1,    0.022,    0.022},      
+  {{re,'-listify/3-lc$^1/1-1-',3},                1,    0.019,    0.019},      
+  {{code_server,call,2},                          1,    0.018,    0.018}],     
+ { garbage_collect,                              24,    0.995,    0.995},     %
+ [ ]}.
+
+{[{{rebar_deps,get_shared_deps_dir,2},            3,    0.339,    0.056},      
+  {{rebar_deps,get_deps_dir,2},                   2,    0.160,    0.049},      
+  {{rebar_deps,postprocess,2},                    1,    0.133,    0.008},      
+  {{rebar_app_utils,load_app_file,2},             1,    0.124,    0.008},      
+  {{rebar_port_compiler,get_defines,1},           1,    0.119,    0.041},      
+  {{rebar_core,process_commands,2},               1,    0.108,    0.007}],     
+ { {rebar_config,get_xconf,3},                    9,    0.983,    0.169},     %
+ [{{dict,find,2},                                 9,    0.814,    0.183}]}.    
+
+{[{{rebar_app_utils,consult_app_file,1},          1,    0.635,    0.027},      
+  {{rebar_core,skip_or_process_dir,6},            1,    0.329,    0.012}],     
+ { {lists,suffix,2},                              2,    0.964,    0.039},     %
+ [{{lists,nthtail,2},                             2,    0.925,    0.008}]}.    
+
+{[{{gen,do_call,4},                              76,    0.886,    0.886},      
+  {{io,execute_request,2},                        8,    0.035,    0.035},      
+  {{file,file_request,2},                         3,    0.012,    0.012}],     
+ { {erlang,monitor,2},                           87,    0.933,    0.933},     %
+ [ ]}.
+
+{[{{lists,suffix,2},                              2,    0.925,    0.008},      
+  {{lists,nthtail,2},                            72,    0.000,    0.917}],     
+ { {lists,nthtail,2},                            74,    0.925,    0.925},     %
+ [{{lists,nthtail,2},                            72,    0.000,    0.917}]}.    
+
+{[{{lists,usort,1},                               8,    0.893,    0.034},      
+  {{lists,usplit_1,5},                           18,    0.000,    0.168}],     
+ { {lists,usplit_1,5},                           26,    0.893,    0.202},     %
+ [{{lists,rumergel,3},                            6,    0.391,    0.302},      
+  {{lists,usplit_1_1,6},                          2,    0.300,    0.009},      
+  {{lists,usplit_1,5},                           18,    0.000,    0.168}]}.    
+
+{[{{erl_parse,normalise,1},                       8,    0.879,    0.446},      
+  {{erl_parse,normalise_list,1},                 17,    0.000,    0.237}],     
+ { {erl_parse,normalise_list,1},                 25,    0.879,    0.683},     %
+ [{{erl_parse,normalise_list,1},                 17,    0.000,    0.237},      
+  {{erl_parse,normalise,1},                      17,    0.000,    0.069}]}.    
+
+{[{{rebar_core,process_dir,4},                    1,    0.876,    0.004}],     
+ { {filelib,is_dir,1},                            1,    0.876,    0.004},     %
+ [{{filelib,do_is_dir,2},                         1,    0.872,    0.006}]}.    
+
+{[{{dict,get_bucket,2},                          85,    0.875,    0.875}],     
+ { {dict,get_bucket_s,2},                        85,    0.875,    0.875},     %
+ [ ]}.
+
+{[{{filelib,is_dir,1},                            1,    0.872,    0.006}],     
+ { {filelib,do_is_dir,2},                         1,    0.872,    0.006},     %
+ [{{filelib,eval_read_file_info,2},               1,    0.866,    0.004}]}.    
+
+{[{{re,split,3},                                 53,    0.395,    0.395},      
+  {{rebar_utils,get_arch,0},                     46,    0.272,    0.272},      
+  {{lists,flatmap,2},                             8,    0.057,    0.057},      
+  {{rebar_core,acc_modules,5},                    3,    0.045,    0.045},      
+  {{rebar_core,process_dir1,6},                   4,    0.016,    0.016},      
+  {{rebar_port_compiler,setup_env,2},             3,    0.012,    0.012},      
+  {{rebar_core,execute_plugin_hook,6},            2,    0.008,    0.008},      
+  {{rebar_core,'-setup_envs/2-fun-0-',2},         2,    0.007,    0.007},      
+  {{file,file_name_1,2},                          2,    0.007,    0.007},      
+  {{rebar_port_compiler,get_defines,1},           1,    0.004,    0.004},      
+  {{filelib,'-do_wildcard_4/3-lc$^0/1-1-',3},     1,    0.004,    0.004},      
+  {{rebar_config,consult_file,1},                 1,    0.003,    0.003}],     
+ { {erlang,'++',2},                             126,    0.830,    0.830},     %
+ [ ]}.
+
+{[{{io_lib_format,field_width,2},                66,    0.801,    0.801}],     
+ { {io_lib_format,field_value,2},                66,    0.801,    0.801},     %
+ [ ]}.
+
+{[{{io_lib_format,collect_cseq,2},               66,    0.789,    0.789}],     
+ { {io_lib_format,collect_cc,2},                 66,    0.789,    0.789},     %
+ [ ]}.
+
+{[{{rebar_core,select_modules,3},                66,    0.574,    0.574},      
+  {{rebar_core,'-setup_envs/2-fun-0-',2},        22,    0.197,    0.197},      
+  {{error_handler,undefined_function,3},          4,    0.018,    0.018}],     
+ { {erlang,function_exported,3},                 92,    0.789,    0.789},     %
+ [ ]}.
+
+{[{{lists,keymergel,4},                           2,    0.742,    0.009},      
+  {{lists,keymerge3_12_3,9},                      2,    0.033,    0.006},      
+  {{lists,keymerge3_1,10},                        1,    0.011,    0.007},      
+  {{lists,keymerge2_2,7},                        22,    0.000,    0.181},      
+  {{lists,keymerge2_1,6},                        20,    0.000,    0.119}],     
+ { {lists,keymerge2_1,6},                        47,    0.786,    0.322},     %
+ [{{lists,keymerge2_2,7},                        23,    0.756,    0.321},      
+  {{lists,reverse,2},                             4,    0.016,    0.016},      
+  {{lists,keymerge2_1,6},                        20,    0.000,    0.119}]}.    
+
+{[{{lists,keymerge2_1,6},                        23,    0.756,    0.321},      
+  {{lists,keymerge3_2,10},                        1,    0.009,    0.006},      
+  {{lists,keymerge2_2,7},                        14,    0.000,    0.124}],     
+ { {lists,keymerge2_2,7},                        38,    0.765,    0.451},     %
+ [{{lists,reverse,2},                             2,    0.006,    0.006},      
+  {{lists,keymerge2_2,7},                        14,    0.000,    0.124},      
+  {{lists,keymerge2_1,6},                        22,    0.000,    0.181}]}.    
+
+{[{{io_lib_format,collect_cseq,2},               66,    0.762,    0.762}],     
+ { {io_lib_format,encoding,2},                   66,    0.762,    0.762},     %
+ [ ]}.
+
+{[{{re,precomp_repl,1},                          22,    0.741,    0.407},      
+  {{re,pick_int,1},                              22,    0.000,    0.334}],     
+ { {re,pick_int,1},                              44,    0.741,    0.741},     %
+ [{{re,pick_int,1},                              22,    0.000,    0.334}]}.    
+
+{[{{io_lib_format,field_width,2},                66,    0.738,    0.738}],     
+ { {io_lib_format,field_width,3},                66,    0.738,    0.738},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                              76,    0.736,    0.736}],     
+ { {erlang,send,3},                              76,    0.736,    0.736},     %
+ [ ]}.
+
+{[{{rebar_deps,preprocess,2},                     2,    0.245,    0.135},      
+  {{rebar_deps,is_app_available,5},               2,    0.147,    0.023},      
+  {{rebar_config,consult_file,1},                 1,    0.109,    0.048},      
+  {{rebar_core,process_dir1,6},                   2,    0.101,    0.025},      
+  {{rebar,init_config1,1},                        1,    0.071,    0.051},      
+  {{rebar_core,execute,5},                        1,    0.036,    0.011}],     
+ { {rebar_log,log,3},                             9,    0.709,    0.293},     %
+ [{{application,get_env,2},                       9,    0.346,    0.114},      
+  {{rebar_log,should_log,2},                      9,    0.070,    0.070}]}.    
+
+{[{{lists,usplit_1,5},                            6,    0.391,    0.302},      
+  {{lists,usplit_1_1,6},                          2,    0.283,    0.061},      
+  {{lists,umergel,3},                             1,    0.015,    0.008},      
+  {{lists,rumergel,3},                            2,    0.000,    0.068}],     
+ { {lists,rumergel,3},                           11,    0.689,    0.439},     %
+ [{{lists,rumerge2_1,4},                          2,    0.108,    0.056},      
+  {{lists,umergel,3},                             9,    0.070,    0.073},      
+  {{lists,reverse,2},                             7,    0.069,    0.069},      
+  {{lists,rumergel,3},                            2,    0.000,    0.068}]}.    
+
+{[{{io_lib_format,collect_cseq,2},               66,    0.673,    0.673}],     
+ { {io_lib_format,strings,2},                    66,    0.673,    0.673},     %
+ [ ]}.
+
+{[{{gen,call,4},                                 76,    0.645,    0.645},      
+  {{error_handler,ensure_loaded,1},               4,    0.016,    0.016}],     
+ { {erlang,whereis,1},                           80,    0.661,    0.661},     %
+ [ ]}.
+
+{[{{file,position,2},                             2,    0.377,    0.107},      
+  {{file,close,1},                                1,    0.268,    0.062}],     
+ { {file,file_request,2},                         3,    0.645,    0.169},     %
+ [{suspend,                                       3,    0.442,    0.000},      
+  {{erlang,demonitor,2},                          3,    0.022,    0.018},      
+  {{erlang,monitor,2},                            3,    0.012,    0.012}]}.    
+
+{[{{io_lib_format,control,9},                    66,    0.624,    0.624}],     
+ { {io_lib_format,string,5},                     66,    0.624,    0.624},     %
+ [ ]}.
+
+{[{{lists,rkeymergel,4},                          1,    0.589,    0.097},      
+  {{lists,rkeymerge3_21_3,9},                     1,    0.000,    0.003},      
+  {{lists,rkeymerge3_2,10},                       3,    0.000,    0.012},      
+  {{lists,rkeymerge3_1,10},                       3,    0.000,    0.026}],     
+ { {lists,rkeymerge3_1,10},                       8,    0.589,    0.138},     %
+ [{{lists,rkeymerge3_2,10},                       5,    0.492,    0.199},      
+  {{lists,rkeymerge3_1,10},                       3,    0.000,    0.026}]}.    
+
+{[{{io_lib_format,collect_cseq,2},               66,    0.572,    0.572}],     
+ { {io_lib_format,pad_char,2},                   66,    0.572,    0.572},     %
+ [ ]}.
+
+{[{{io_lib_format,build,3},                      66,    0.562,    0.562}],     
+ { {io_lib_format,decr_pc,2},                    66,    0.562,    0.562},     %
+ [ ]}.
+
+{[{{gen,do_call,4},                              76,    0.495,    0.495},      
+  {{io,wait_io_mon_reply,2},                      8,    0.043,    0.043},      
+  {{file,file_request,2},                         3,    0.022,    0.018}],     
+ { {erlang,demonitor,2},                         87,    0.560,    0.556},     %
+ [{{erlang,flush_monitor_message,2},              1,    0.004,    0.004}]}.    
+
+{[{{rebar_log,log,3},                             9,    0.346,    0.114},      
+  {{rebar_core,process_dir,4},                    1,    0.138,    0.121},      
+  {{rebar_core,process_dir1,6},                   1,    0.061,    0.004}],     
+ { {application,get_env,2},                      11,    0.545,    0.239},     %
+ [{{application_controller,get_env,2},           11,    0.306,    0.200}]}.    
+
+{[{{rebar_core,get_operations,1},                 3,    0.303,    0.025},      
+  {{rebar_utils,processing_base_dir,2},           1,    0.212,    0.008}],     
+ { {rebar_config,get_xconf,2},                    4,    0.515,    0.033},     %
+ [{{dict,find,2},                                 4,    0.482,    0.316}]}.    
+
+{[{{lists,keymergel,4},                           4,    0.505,    0.019},      
+  {{lists,keymerge3_2,10},                        4,    0.000,    0.055},      
+  {{lists,keymerge3_12_3,9},                      6,    0.000,    0.064},      
+  {{lists,keymerge3_1,10},                       11,    0.000,    0.036}],     
+ { {lists,keymerge3_1,10},                       25,    0.505,    0.174},     %
+ [{{lists,keymerge3_2,10},                        9,    0.275,    0.123},      
+  {{lists,keymerge3_12_3,9},                      3,    0.258,    0.012},      
+  {{lists,keymerge3_21_3,9},                      1,    0.204,    0.004},      
+  {{lists,keymerge2_1,6},                         1,    0.011,    0.007},      
+  {{lists,keymerge3_1,10},                       11,    0.000,    0.036}]}.    
+
+{[{{rebar_port_compiler,default_env,0},           1,    0.287,    0.004},      
+  {{rebar_port_compiler,erts_dir,0},              1,    0.217,    0.004}],     
+ { {lists,concat,1},                              2,    0.504,    0.008},     %
+ [{{lists,flatmap,2},                             2,    0.496,    0.279}]}.    
+
+{[{{rebar_core,execute_pre,5},                    1,    0.262,    0.109},      
+  {{rebar_core,execute_post,5},                   1,    0.239,    0.018}],     
+ { {rebar_core,execute_plugin_hook,6},            2,    0.501,    0.127},     %
+ [{{rebar_core,execute,5},                        2,    0.345,    0.215},      
+  {{erlang,list_to_atom,1},                       2,    0.014,    0.014},      
+  {{erlang,'++',2},                               2,    0.008,    0.008},      
+  {{erlang,atom_to_list,1},                       2,    0.007,    0.007}]}.    
+
+{[{{rebar_deps,preprocess,2},                     1,    0.499,    0.015}],     
+ { {rebar_deps,set_shared_deps_dir,2},            1,    0.499,    0.015},     %
+ [{{rebar_config,set_xconf,3},                    1,    0.316,    0.010},      
+  {{rebar_config,get_global,3},                   1,    0.083,    0.007},      
+  {{rebar_config,get_local,3},                    1,    0.079,    0.011},      
+  {{os,getenv,1},                                 1,    0.006,    0.006}]}.    
+
+{[{{lists,concat,1},                              2,    0.496,    0.279},      
+  {{rebar_subdirs,preprocess,2},                  1,    0.003,    0.003},      
+  {{lists,flatmap,2},                             8,    0.000,    0.065}],     
+ { {lists,flatmap,2},                            11,    0.499,    0.347},     %
+ [{{lists,'-concat/1-fun-0-',1},                  8,    0.095,    0.068},      
+  {{erlang,'++',2},                               8,    0.057,    0.057},      
+  {{lists,flatmap,2},                             8,    0.000,    0.065}]}.    
+
+{[{{lists,rkeymergel,4},                          1,    0.488,    0.004},      
+  {{lists,rkeymerge2_2,7},                        6,    0.010,    0.025},      
+  {{lists,rkeymerge2_1,6},                       11,    0.000,    0.310}],     
+ { {lists,rkeymerge2_1,6},                       18,    0.498,    0.339},     %
+ [{{lists,rkeymerge2_2,7},                        5,    0.400,    0.018},      
+  {{lists,reverse,2},                             2,    0.007,    0.007},      
+  {{lists,rkeymerge2_1,6},                       11,    0.000,    0.310}]}.    
+
+{[{{lists,rkeymerge3_1,10},                       5,    0.492,    0.199},      
+  {{lists,rkeymerge3_2,10},                      10,    0.000,    0.130},      
+  {{lists,rkeymerge3_12_3,9},                     4,    0.000,    0.017}],     
+ { {lists,rkeymerge3_2,10},                      19,    0.492,    0.346},     %
+ [{{lists,rkeymerge3_12_3,9},                     4,    0.486,    0.014},      
+  {{lists,rkeymerge3_21_3,9},                     1,    0.357,    0.004},      
+  {{lists,rkeymerge2_2,7},                        1,    0.015,    0.005},      
+  {{lists,rkeymerge3_2,10},                      10,    0.000,    0.130},      
+  {{lists,rkeymerge3_1,10},                       3,    0.000,    0.012}]}.    
+
+{[{{lists,rkeymerge3_2,10},                       4,    0.486,    0.014},      
+  {{lists,rkeymerge3_12_3,9},                     1,    0.000,    0.065}],     
+ { {lists,rkeymerge3_12_3,9},                     5,    0.486,    0.079},     %
+ [{{lists,rkeymerge3_2,10},                       4,    0.000,    0.017},      
+  {{lists,rkeymerge3_12_3,9},                     1,    0.000,    0.065}]}.    
+
+{[{{rebar_subdirs,preprocess,2},                  1,    0.477,    0.009}],     
+ { {rebar_subdirs,check_loop,1},                  1,    0.477,    0.009},     %
+ [{{filename,join,2},                             1,    0.468,    0.045}]}.    
+
+{[{{lists,keymerge3_1,10},                        9,    0.275,    0.123},      
+  {{lists,keymerge3_21_3,9},                      3,    0.200,    0.011},      
+  {{lists,keymerge3_2,10},                        1,    0.000,    0.003}],     
+ { {lists,keymerge3_2,10},                       13,    0.475,    0.137},     %
+ [{{lists,keymerge3_21_3,9},                      2,    0.051,    0.006},      
+  {{lists,keymerge3_12_3,9},                      5,    0.050,    0.112},      
+  {{lists,keymerge2_2,7},                         1,    0.009,    0.006},      
+  {{lists,keymerge3_2,10},                        1,    0.000,    0.003},      
+  {{lists,keymerge3_1,10},                        4,    0.000,    0.055}]}.    
+
+{[{{io_lib_format,collect_cseq,2},               66,    0.475,    0.475}],     
+ { {io_lib_format,precision,2},                  66,    0.475,    0.475},     %
+ [ ]}.
+
+{[{{filelib,do_wildcard_3,4},                     1,    0.429,    0.016}],     
+ { {filelib,prepare_base,1},                      1,    0.429,    0.016},     %
+ [{{filename,join,2},                             1,    0.391,    0.011},      
+  {{lists,reverse,1},                             2,    0.022,    0.015}]}.    
+
+{[{{filename,extension,1},                        1,    0.420,    0.004},      
+  {{filename,extension,3},                       45,    0.000,    0.416}],     
+ { {filename,extension,3},                       46,    0.420,    0.420},     %
+ [{{filename,extension,3},                       45,    0.000,    0.416}]}.    
+
+{[{{epp,read_encoding_from_file,2},               2,    0.282,    0.008},      
+  {{epp,set_encoding,1},                          1,    0.135,    0.041}],     
+ { {io,setopts,2},                                3,    0.417,    0.049},     %
+ [{{io,request,2},                                3,    0.368,    0.060}]}.    
+
+{[{{lists,rkeymerge2_1,6},                        5,    0.400,    0.018},      
+  {{lists,rkeymerge3_2,10},                       1,    0.015,    0.005},      
+  {{lists,rkeymerge2_2,7},                       11,    0.000,    0.134}],     
+ { {lists,rkeymerge2_2,7},                       17,    0.415,    0.157},     %
+ [{{lists,rkeymerge2_1,6},                        6,    0.010,    0.025},      
+  {{lists,rkeymerge2_2,7},                       11,    0.000,    0.134}]}.    
+
+{[{{rebar,init_config1,1},                        1,    0.415,    0.051}],     
+ { {escript,script_name,0},                       1,    0.415,    0.051},     %
+ [{{init,get_plain_arguments,0},                  1,    0.364,    0.008}]}.    
+
+{[{{filename,absname,2},                          1,    0.409,    0.008}],     
+ { {filename,absname_join,2},                     1,    0.409,    0.008},     %
+ [{{filename,join,2},                             1,    0.386,    0.053},      
+  {{filename,flatten,1},                          1,    0.015,    0.005}]}.    
+
+{[{{re,do_split,6},                              53,    0.407,    0.407}],     
+ { {re,extend_subpatterns,2},                    53,    0.407,    0.407},     %
+ [ ]}.
+
+{[{{re,do_split,6},                              53,    0.395,    0.395}],     
+ { {re,empty_sub,1},                             53,    0.395,    0.395},     %
+ [ ]}.
+
+{[{{re,'-compile_split/2-fun-0-',1},             53,    0.394,    0.394}],     
+ { {re,runopt,1},                                53,    0.394,    0.394},     %
+ [ ]}.
+
+{[{{rebar_app_utils,get_skip_apps,1},             1,    0.144,    0.008},      
+  {{rebar_deps,preprocess,2},                     1,    0.116,    0.008},      
+  {{rebar_deps,set_shared_deps_dir,2},            1,    0.083,    0.007},      
+  {{rebar_app_utils,get_apps,1},                  1,    0.049,    0.009}],     
+ { {rebar_config,get_global,3},                   4,    0.392,    0.032},     %
+ [{{dict,find,2},                                 4,    0.360,    0.209}]}.    
+
+{[{{epp,read_encoding_from_file,2},               2,    0.385,    0.008}],     
+ { {file,position,2},                             2,    0.385,    0.008},     %
+ [{{file,file_request,2},                         2,    0.377,    0.107}]}.    
+
+{[{{rebar_core,process_commands,2},               3,    0.365,    0.062}],     
+ { {rebar_core,get_operations,1},                 3,    0.365,    0.062},     %
+ [{{rebar_config,get_xconf,2},                    3,    0.303,    0.025}]}.    
+
+{[{{escript,script_name,0},                       1,    0.364,    0.008}],     
+ { {init,get_plain_arguments,0},                  1,    0.364,    0.008},     %
+ [{{init,bs2ss,1},                                1,    0.325,    0.046},      
+  {{init,request,1},                              1,    0.031,    0.011}]}.    
+
+{[{{lists,rkeymerge3_2,10},                       1,    0.357,    0.004},      
+  {{lists,rkeymerge3_21_3,9},                     2,    0.000,    0.007}],     
+ { {lists,rkeymerge3_21_3,9},                     3,    0.357,    0.011},     %
+ [{{lists,rkeymerge3_21_3,9},                     2,    0.000,    0.007},      
+  {{lists,rkeymerge3_1,10},                       1,    0.000,    0.003}]}.    
+
+{[{{rebar_deps,get_deps_dir,2},                   2,    0.217,    0.008},      
+  {{rebar_deps,preprocess,2},                     1,    0.135,    0.005}],     
+ { {rebar_deps,get_shared_deps_dir,2},            3,    0.352,    0.013},     %
+ [{{rebar_config,get_xconf,3},                    3,    0.339,    0.056}]}.    
+
+{[{{rebar_port_compiler,os_env,0},                1,    0.350,    0.082},      
+  {{rebar_port_compiler,'-os_env/0-lc$^1/1-1-',1},  53,    0.000,    0.268}],     
+ { {rebar_port_compiler,'-os_env/0-lc$^1/1-1-',1},  54,    0.350,    0.350},     %
+ [{{rebar_port_compiler,'-os_env/0-lc$^1/1-1-',1},  53,    0.000,    0.268}]}.    
+
+{[{{init,get_plain_arguments,0},                  1,    0.325,    0.046}],     
+ { {init,bs2ss,1},                                1,    0.325,    0.046},     %
+ [{{init,map,2},                                  1,    0.279,    0.072}]}.    
+
+{[{{rebar_core,process_dir1,6},                   2,    0.317,    0.055}],     
+ { {rebar_core,process_each,5},                   2,    0.317,    0.055},     %
+ [{{rebar_config,reset_envs,1},                   2,    0.262,    0.217}]}.    
+
+{[{{rebar_core,'-setup_envs/2-fun-0-',2},         2,    0.311,    0.022}],     
+ { {rebar_config,save_env,3},                     2,    0.311,    0.022},     %
+ [{{dict,store,3},                                2,    0.283,    0.155},      
+  {{erlang,setelement,3},                         2,    0.006,    0.006}]}.    
+
+{[{{lists,keymerge3_1,10},                        3,    0.258,    0.012},      
+  {{lists,keymerge3_2,10},                        5,    0.050,    0.112},      
+  {{lists,keymerge3_12_3,9},                      1,    0.000,    0.004}],     
+ { {lists,keymerge3_12_3,9},                      9,    0.308,    0.128},     %
+ [{{lists,keymerge2_1,6},                         2,    0.033,    0.006},      
+  {{lists,keymerge3_12_3,9},                      1,    0.000,    0.004},      
+  {{lists,keymerge3_1,10},                        6,    0.000,    0.064}]}.    
+
+{[{{application,get_env,2},                      11,    0.306,    0.200}],     
+ { {application_controller,get_env,2},           11,    0.306,    0.200},     %
+ [{{ets,lookup,2},                               11,    0.106,    0.106}]}.    
+
+{[{{rebar_config,get,3},                          3,    0.211,    0.021},      
+  {{rebar_config,get_local,3},                    4,    0.088,    0.065},      
+  {{rebar_deps,find_deps,4},                      1,    0.004,    0.004},      
+  {{proplists,get_value,3},                      12,    0.000,    0.213}],     
+ { {proplists,get_value,3},                      20,    0.303,    0.303},     %
+ [{{proplists,get_value,3},                      12,    0.000,    0.213}]}.    
+
+{[{{lists,usplit_1,5},                            2,    0.300,    0.009},      
+  {{lists,usplit_1_1,6},                          2,    0.000,    0.008}],     
+ { {lists,usplit_1_1,6},                          4,    0.300,    0.017},     %
+ [{{lists,rumergel,3},                            2,    0.283,    0.061},      
+  {{lists,usplit_1_1,6},                          2,    0.000,    0.008}]}.    
+
+{[{{init,bs2ss,1},                                1,    0.279,    0.072},      
+  {{init,map,2},                                  3,    0.000,    0.018}],     
+ { {init,map,2},                                  4,    0.279,    0.090},     %
+ [{{init,'-bs2ss/1-fun-0-',1},                    3,    0.189,    0.012},      
+  {{init,map,2},                                  3,    0.000,    0.018}]}.    
+
+{[{{file,consult,1},                              1,    0.276,    0.008}],     
+ { {file,close,1},                                1,    0.276,    0.008},     %
+ [{{file,file_request,2},                         1,    0.268,    0.062}]}.    
+
+{[{{rebar_port_compiler,default_env,0},           1,    0.274,    0.028}],     
+ { {rebar_port_compiler,erts_dir,0},              1,    0.274,    0.028},     %
+ [{{lists,concat,1},                              1,    0.217,    0.004},      
+  {{code,root_dir,0},                             1,    0.025,    0.003},      
+  {{erlang,system_info,1},                        1,    0.004,    0.004}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.266,    0.004}],     
+ { {rebar_core,execute_pre,5},                    1,    0.266,    0.004},     %
+ [{{rebar_core,execute_plugin_hook,6},            1,    0.262,    0.109}]}.    
+
+{[{{rebar_core,process_each,5},                   2,    0.262,    0.217}],     
+ { {rebar_config,reset_envs,1},                   2,    0.262,    0.217},     %
+ [{{rebar_config,new_env,0},                      2,    0.032,    0.010},      
+  {{erlang,setelement,3},                         2,    0.013,    0.013}]}.    
+
+{[{{rebar_deps,set_shared_deps_dir,2},            1,    0.079,    0.011},      
+  {{rebar_subdirs,preprocess,2},                  1,    0.073,    0.008},      
+  {{rebar_deps,preprocess,2},                     1,    0.073,    0.008},      
+  {{rebar_core,update_code_path,1},               1,    0.033,    0.011}],     
+ { {rebar_config,get_local,3},                    4,    0.258,    0.038},     %
+ [{{rebar_config,local_opts,2},                   4,    0.132,    0.016},      
+  {{proplists,get_value,3},                       4,    0.088,    0.065}]}.    
+
+{[{{lists,keymerge3_1,10},                        1,    0.204,    0.004},      
+  {{lists,keymerge3_2,10},                        2,    0.051,    0.006},      
+  {{lists,keymerge3_21_3,9},                      1,    0.000,    0.003}],     
+ { {lists,keymerge3_21_3,9},                      4,    0.255,    0.013},     %
+ [{{lists,keymerge3_2,10},                        3,    0.200,    0.011},      
+  {{lists,keymerge3_21_3,9},                      1,    0.000,    0.003}]}.    
+
+{[{{epp,read_encoding_from_file,2},               1,    0.245,    0.011}],     
+ { {epp,'-reader/2-fun-0-',2},                    1,    0.245,    0.011},     %
+ [{{file,read,2},                                 1,    0.231,    0.010},      
+  {{epp,reader,2},                                1,    0.003,    0.003}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.244,    0.005}],     
+ { {rebar_core,execute_post,5},                   1,    0.244,    0.005},     %
+ [{{rebar_core,execute_plugin_hook,6},            1,    0.239,    0.018}]}.    
+
+{[{{epp,read_encoding_from_file,2},               1,    0.238,    0.003},      
+  {{epp,com,4},                                   2,    0.000,    0.007}],     
+ { {epp,com_nl,4},                                3,    0.238,    0.010},     %
+ [{{epp,com,4},                                   2,    0.235,    0.046},      
+  {{erlang,throw,1},                              1,    0.005,    0.005}]}.    
+
+{[{{epp,com_nl,4},                                2,    0.235,    0.046},      
+  {{epp,com,4},                                  22,    0.000,    0.177}],     
+ { {epp,com,4},                                  24,    0.235,    0.223},     %
+ [{{epp,com_nl,4},                                2,    0.000,    0.007},      
+  {{epp,com,4},                                  22,    0.000,    0.177}]}.    
+
+{[{{epp,'-reader/2-fun-0-',2},                    1,    0.231,    0.010}],     
+ { {file,read,2},                                 1,    0.231,    0.010},     %
+ [{{io,request,2},                                1,    0.221,    0.044}]}.    
+
+{[{{rebar_core,process_dir,4},                    1,    0.230,    0.009}],     
+ { {rebar_core,maybe_load_local_config,2},        1,    0.230,    0.009},     %
+ [{{rebar_utils,processing_base_dir,2},           1,    0.221,    0.009}]}.    
+
+{[{{rebar_config,get_list,3},                     2,    0.212,    0.008},      
+  {{rebar_deps,preprocess,2},                     1,    0.011,    0.004}],     
+ { {rebar_config,get,3},                          3,    0.223,    0.012},     %
+ [{{proplists,get_value,3},                       3,    0.211,    0.021}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.222,    0.018}],     
+ { {sets,add_element,2},                          1,    0.222,    0.018},     %
+ [{{sets,get_slot,2},                             1,    0.104,    0.099},      
+  {{sets,on_bucket,3},                            1,    0.087,    0.064},      
+  {{sets,maybe_expand,2},                         1,    0.013,    0.009}]}.    
+
+{[{{rebar_core,maybe_load_local_config,2},        1,    0.221,    0.009}],     
+ { {rebar_utils,processing_base_dir,2},           1,    0.221,    0.009},     %
+ [{{rebar_config,get_xconf,2},                    1,    0.212,    0.008}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             2,    0.219,    0.007}],     
+ { {rebar_config,get_list,3},                     2,    0.219,    0.007},     %
+ [{{rebar_config,get,3},                          2,    0.212,    0.008}]}.    
+
+{[{{re,precomp_repl,1},                          22,    0.214,    0.214}],     
+ { {erlang,list_to_integer,1},                   22,    0.214,    0.214},     %
+ [ ]}.
+
+{[{{file,check_and_call,2},                       9,    0.180,    0.112},      
+  {{file,open,2},                                 1,    0.011,    0.004},      
+  {{file,check_args,1},                          11,    0.000,    0.075}],     
+ { {file,check_args,1},                          21,    0.191,    0.191},     %
+ [{{file,check_args,1},                          11,    0.000,    0.075}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.190,    0.015}],     
+ { {rebar_core,plugin_modules,2},                 1,    0.190,    0.015},     %
+ [{{lists,flatten,1},                             1,    0.096,    0.090},      
+  {{rebar_config,get_all,2},                      1,    0.066,    0.046},      
+  {{rebar_core,ulist,1},                          1,    0.010,    0.003},      
+  {{rebar_core,plugin_modules,3},                 1,    0.003,    0.003}]}.    
+
+{[{{init,map,2},                                  3,    0.189,    0.012}],     
+ { {init,'-bs2ss/1-fun-0-',1},                    3,    0.189,    0.012},     %
+ [{{init,b2s,1},                                  3,    0.177,    0.110}]}.    
+
+{[{{file,file_name,1},                           10,    0.172,    0.172},      
+  {{init,b2s,1},                                  3,    0.012,    0.012}],     
+ { {file,native_name_encoding,0},                13,    0.184,    0.184},     %
+ [ ]}.
+
+{[{{init,'-bs2ss/1-fun-0-',1},                    3,    0.177,    0.110}],     
+ { {init,b2s,1},                                  3,    0.177,    0.110},     %
+ [{{unicode,characters_to_list,2},                3,    0.055,    0.055},      
+  {{file,native_name_encoding,0},                 3,    0.012,    0.012}]}.    
+
+{[{{rebar_utils,wordsize,0},                     24,    0.174,    0.174}],     
+ { {erlang,integer_to_list,1},                   24,    0.174,    0.174},     %
+ [ ]}.
+
+{[{{re,do_split,6},                              53,    0.173,    0.173}],     
+ { {re,dig_subpatterns,3},                       53,    0.173,    0.173},     %
+ [ ]}.
+
+{[{{rebar_port_compiler,default_env,0},           2,    0.162,    0.014}],     
+ { {rebar_port_compiler,erl_interface_dir,1},     2,    0.162,    0.014},     %
+ [{{code,lib_dir,2},                              2,    0.148,    0.008}]}.    
+
+{[{{filelib,compile_wildcard_2,2},                3,    0.160,    0.150}],     
+ { {filelib,compile_wildcard_3,2},                3,    0.160,    0.150},     %
+ [{{lists,reverse,1},                             3,    0.010,    0.010}]}.    
+
+{[{{rebar_port_compiler,setup_env,2},             1,    0.153,    0.022}],     
+ { {rebar_port_compiler,get_defines,1},           1,    0.153,    0.022},     %
+ [{{rebar_config,get_xconf,3},                    1,    0.119,    0.041},      
+  {{string,join,2},                               1,    0.004,    0.004},      
+  {{rebar_port_compiler,'-get_defines/1-lc$^0/1-0-',1},   1,    0.004,    0.004},      
+  {{erlang,'++',2},                               1,    0.004,    0.004}]}.    
+
+{[{{rebar_app_utils,is_skipped_app,2},            1,    0.148,    0.004}],     
+ { {rebar_app_utils,get_skip_apps,1},             1,    0.148,    0.004},     %
+ [{{rebar_config,get_global,3},                   1,    0.144,    0.008}]}.    
+
+{[{{rebar_port_compiler,erl_interface_dir,1},     2,    0.148,    0.008}],     
+ { {code,lib_dir,2},                              2,    0.148,    0.008},     %
+ [{{code,call,1},                                 2,    0.140,    0.007}]}.    
+
+{[{{rebar_config,new_skip_dirs,0},                1,    0.066,    0.061},      
+  {{dict,from_list,1},                            3,    0.036,    0.022},      
+  {{rebar_config,new_env,0},                      2,    0.022,    0.014},      
+  {{rebar_core,remember_cwd_predirs,2},           1,    0.012,    0.009},      
+  {{rebar_core,process_commands,2},               1,    0.011,    0.007}],     
+ { {dict,new,0},                                  8,    0.147,    0.113},     %
+ [{{dict,mk_seg,1},                               8,    0.034,    0.034}]}.    
+
+{[{{rebar_core,acc_modules,5},                    1,    0.142,    0.009}],     
+ { {rebar_deps,postprocess,2},                    1,    0.142,    0.009},     %
+ [{{rebar_config,get_xconf,3},                    1,    0.133,    0.008}]}.    
+
+{[{{epp,read_encoding_from_file,2},               1,    0.139,    0.004}],     
+ { {io,getopts,1},                                1,    0.139,    0.004},     %
+ [{{io,request,2},                                1,    0.135,    0.049}]}.    
+
+{[{{erl_parse,yeccgoto_exprs,7},                  1,    0.133,    0.005}],     
+ { {erl_parse,yeccpars2_87,7},                    1,    0.133,    0.005},     %
+ [{{erl_parse,yeccgoto_clause_body,7},            1,    0.128,    0.004}]}.    
+
+{[{{rebar_config,get_local,3},                    4,    0.132,    0.016},      
+  {{rebar_config,local_opts,2},                   7,    0.000,    0.067}],     
+ { {rebar_config,local_opts,2},                  11,    0.132,    0.083},     %
+ [{{lists,reverse,1},                             4,    0.049,    0.049},      
+  {{rebar_config,local_opts,2},                   7,    0.000,    0.067}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.076,    0.004},      
+  {{rebar_subdirs,preprocess,2},                  1,    0.053,    0.005}],     
+ { {rebar_config,is_skip_dir,2},                  2,    0.129,    0.009},     %
+ [{{dict,is_key,2},                               2,    0.120,    0.035}]}.    
+
+{[{{erl_parse,yeccpars2_87,7},                    1,    0.128,    0.004}],     
+ { {erl_parse,yeccgoto_clause_body,7},            1,    0.128,    0.004},     %
+ [{{erl_parse,yeccpars2_283,7},                   1,    0.124,    0.004}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.125,    0.093}],     
+ { {rebar_config,set,3},                          1,    0.125,    0.093},     %
+ [{{proplists,delete,2},                          1,    0.025,    0.012},      
+  {{erlang,setelement,3},                         1,    0.007,    0.007}]}.    
+
+{[{{rebar_utils,expand_code_path,0},              1,    0.125,    0.005}],     
+ { {code,get_path,0},                             1,    0.125,    0.005},     %
+ [{{code,call,1},                                 1,    0.120,    0.004}]}.    
+
+{[{{lists,rumergel,3},                            9,    0.070,    0.073},      
+  {{lists,usplit_2_1,6},                          1,    0.054,    0.010},      
+  {{lists,umergel,3},                             1,    0.000,    0.005}],     
+ { {lists,umergel,3},                            11,    0.124,    0.088},     %
+ [{{lists,umerge2_2,4},                           1,    0.024,    0.004},      
+  {{lists,rumergel,3},                            1,    0.015,    0.008},      
+  {{lists,umergel,3},                             1,    0.000,    0.005}]}.    
+
+{[{{erl_parse,yeccgoto_clause_body,7},            1,    0.124,    0.004}],     
+ { {erl_parse,yeccpars2_283,7},                   1,    0.124,    0.004},     %
+ [{{erl_parse,yeccgoto_function_clause,7},        1,    0.120,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_283,7},                   1,    0.120,    0.004}],     
+ { {erl_parse,yeccgoto_function_clause,7},        1,    0.120,    0.004},     %
+ [{{erl_parse,yeccpars2_5,7},                     1,    0.116,    0.004}]}.    
+
+{[{{rebar_config,is_skip_dir,2},                  2,    0.120,    0.035}],     
+ { {dict,is_key,2},                               2,    0.120,    0.035},     %
+ [{{dict,get_slot,2},                             2,    0.064,    0.054},      
+  {{dict,get_bucket,2},                           2,    0.015,    0.007},      
+  {{dict,find_key,2},                             2,    0.006,    0.006}]}.    
+
+{[{{erl_parse,yeccgoto_function_clause,7},        1,    0.116,    0.004}],     
+ { {erl_parse,yeccpars2_5,7},                     1,    0.116,    0.004},     %
+ [{{erl_parse,yeccgoto_function_clauses,7},       1,    0.112,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_5,7},                     1,    0.112,    0.004}],     
+ { {erl_parse,yeccgoto_function_clauses,7},       1,    0.112,    0.004},     %
+ [{{erl_parse,yeccpars2_4,7},                     1,    0.108,    0.009}]}.    
+
+{[{{rebar_core,execute,5},                        5,    0.110,    0.022},      
+  {{lists,prefix,2},                             10,    0.000,    0.088}],     
+ { {lists,prefix,2},                             15,    0.110,    0.110},     %
+ [{{lists,prefix,2},                             10,    0.000,    0.088}]}.    
+
+{[{{lists,rumergel,3},                            2,    0.108,    0.056},      
+  {{lists,rumerge2_1,4},                          6,    0.000,    0.025}],     
+ { {lists,rumerge2_1,4},                          8,    0.108,    0.081},     %
+ [{{lists,rumerge2_2,5},                          2,    0.027,    0.017},      
+  {{lists,rumerge2_1,4},                          6,    0.000,    0.025}]}.    
+
+{[{{erl_parse,yeccgoto_function_clauses,7},       1,    0.108,    0.009}],     
+ { {erl_parse,yeccpars2_4,7},                     1,    0.108,    0.009},     %
+ [{{erl_parse,yeccgoto_function,7},               1,    0.070,    0.004},      
+  {{erl_parse,build_function,1},                  1,    0.029,    0.007}]}.    
+
+{[{{application_controller,get_env,2},           11,    0.106,    0.106}],     
+ { {ets,lookup,2},                               11,    0.106,    0.106},     %
+ [ ]}.
+
+{[{{sets,add_element,2},                          1,    0.104,    0.099}],     
+ { {sets,get_slot,2},                             1,    0.104,    0.099},     %
+ [{{erlang,phash,2},                              1,    0.005,    0.005}]}.    
+
+{[{{rebar_core,plugin_modules,2},                 1,    0.096,    0.090}],     
+ { {lists,flatten,1},                             1,    0.096,    0.090},     %
+ [{{lists,do_flatten,2},                          1,    0.006,    0.006}]}.    
+
+{[{{lists,flatmap,2},                             8,    0.095,    0.068}],     
+ { {lists,'-concat/1-fun-0-',1},                  8,    0.095,    0.068},     %
+ [{{lists,thing_to_list,1},                       8,    0.027,    0.027}]}.    
+
+{[{{sets,add_element,2},                          1,    0.087,    0.064}],     
+ { {sets,on_bucket,3},                            1,    0.087,    0.064},     %
+ [{{erlang,setelement,3},                         3,    0.014,    0.014},      
+  {{sets,'-add_element/2-fun-0-',2},              1,    0.009,    0.005}]}.    
+
+{[{{rebar_core,process_commands,2},               1,    0.086,    0.010}],     
+ { {rebar_config,reset_skip_dirs,1},              1,    0.086,    0.010},     %
+ [{{rebar_config,new_skip_dirs,0},                1,    0.069,    0.003},      
+  {{erlang,setelement,3},                         1,    0.007,    0.007}]}.    
+
+{[{{rebar_core,process_dir,4},                    1,    0.079,    0.046}],     
+ { {rebar_core,update_code_path,1},               1,    0.079,    0.046},     %
+ [{{rebar_config,get_local,3},                    1,    0.033,    0.011}]}.    
+
+{[{{rebar_log,log,3},                             9,    0.070,    0.070}],     
+ { {rebar_log,should_log,2},                      9,    0.070,    0.070},     %
+ [ ]}.
+
+{[{{erl_parse,yeccpars2_4,7},                     1,    0.070,    0.004}],     
+ { {erl_parse,yeccgoto_function,7},               1,    0.070,    0.004},     %
+ [{{erl_parse,yeccpars2_6,7},                     1,    0.066,    0.004}]}.    
+
+{[{{rebar_config,reset_skip_dirs,1},              1,    0.069,    0.003}],     
+ { {rebar_config,new_skip_dirs,0},                1,    0.069,    0.003},     %
+ [{{dict,new,0},                                  1,    0.066,    0.061}]}.    
+
+{[{{io,request,2},                                8,    0.067,    0.032}],     
+ { {io,io_request,2},                             8,    0.067,    0.032},     %
+ [{{io,bc_req,3},                                 3,    0.035,    0.024}]}.    
+
+{[{{rebar_core,plugin_modules,2},                 1,    0.066,    0.046}],     
+ { {rebar_config,get_all,2},                      1,    0.066,    0.046},     %
+ [{{proplists,get_all_values,2},                  1,    0.020,    0.008}]}.    
+
+{[{{lists,usort,1},                               1,    0.066,    0.004},      
+  {{lists,usplit_2,5},                            1,    0.000,    0.004}],     
+ { {lists,usplit_2,5},                            2,    0.066,    0.008},     %
+ [{{lists,usplit_2_1,6},                          1,    0.058,    0.004},      
+  {{lists,usplit_2,5},                            1,    0.000,    0.004}]}.    
+
+{[{{erl_parse,yeccgoto_function,7},               1,    0.066,    0.004}],     
+ { {erl_parse,yeccpars2_6,7},                     1,    0.066,    0.004},     %
+ [{{erl_parse,yeccpars1,7},                       1,    0.000,    0.012}]}.    
+
+{[{{rebar_core,process_dir1,6},                   1,    0.058,    0.043}],     
+ { {rebar_core,remember_cwd_predirs,2},           1,    0.058,    0.043},     %
+ [{{dict,new,0},                                  1,    0.012,    0.009},      
+  {{lists,foldl,3},                               1,    0.003,    0.003}]}.    
+
+{[{{lists,usplit_2,5},                            1,    0.058,    0.004}],     
+ { {lists,usplit_2_1,6},                          1,    0.058,    0.004},     %
+ [{{lists,umergel,3},                             1,    0.054,    0.010}]}.    
+
+{[{{filelib,do_wildcard,3},                       3,    0.055,    0.055}],     
+ { {lists,sort,1},                                3,    0.055,    0.055},     %
+ [ ]}.
+
+{[{{rebar_app_utils,is_skipped_app,2},            1,    0.054,    0.005}],     
+ { {rebar_app_utils,get_apps,1},                  1,    0.054,    0.005},     %
+ [{{rebar_config,get_global,3},                   1,    0.049,    0.009}]}.    
+
+{[{{io,io_request,2},                             3,    0.035,    0.024}],     
+ { {io,bc_req,3},                                 3,    0.035,    0.024},     %
+ [{{net_kernel,dflag_unicode_io,1},               3,    0.011,    0.011}]}.    
+
+{[{{dict,new,0},                                  8,    0.034,    0.034}],     
+ { {dict,mk_seg,1},                               8,    0.034,    0.034},     %
+ [ ]}.
+
+{[{{rebar_config,reset_envs,1},                   2,    0.032,    0.010}],     
+ { {rebar_config,new_env,0},                      2,    0.032,    0.010},     %
+ [{{dict,new,0},                                  2,    0.022,    0.014}]}.    
+
+{[{{init,get_plain_arguments,0},                  1,    0.031,    0.011}],     
+ { {init,request,1},                              1,    0.031,    0.011},     %
+ [{suspend,                                       1,    0.020,    0.000}]}.    
+
+{[{{erl_parse,yeccpars1,7},                       1,    0.031,    0.009}],     
+ { {erl_parse,yecctoken_end_location,1},          1,    0.031,    0.009},     %
+ [{{erl_parse,yecctoken_location,1},              1,    0.014,    0.007},      
+  {{erl_scan,token_info,2},                       1,    0.008,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_4,7},                     1,    0.029,    0.007}],     
+ { {erl_parse,build_function,1},                  1,    0.029,    0.007},     %
+ [{{erl_parse,check_clauses,3},                   1,    0.022,    0.004}]}.    
+
+{[{{rebar_port_compiler,os_env,0},                1,    0.028,    0.028}],     
+ { {os,getenv,0},                                 1,    0.028,    0.028},     %
+ [ ]}.
+
+{[{{lists,'-concat/1-fun-0-',1},                  8,    0.027,    0.027}],     
+ { {lists,thing_to_list,1},                       8,    0.027,    0.027},     %
+ [ ]}.
+
+{[{{lists,rumerge2_1,4},                          2,    0.027,    0.017}],     
+ { {lists,rumerge2_2,5},                          2,    0.027,    0.017},     %
+ [{{lists,reverse,2},                             2,    0.010,    0.010}]}.    
+
+{[{{rebar_config,set,3},                          1,    0.025,    0.012},      
+  {{proplists,delete,2},                          2,    0.000,    0.013}],     
+ { {proplists,delete,2},                          3,    0.025,    0.025},     %
+ [{{proplists,delete,2},                          2,    0.000,    0.013}]}.    
+
+{[{{rebar_port_compiler,erts_dir,0},              1,    0.025,    0.003}],     
+ { {code,root_dir,0},                             1,    0.025,    0.003},     %
+ [{{code,call,1},                                 1,    0.022,    0.003}]}.    
+
+{[{{lists,umergel,3},                             1,    0.024,    0.004}],     
+ { {lists,umerge2_2,4},                           1,    0.024,    0.004},     %
+ [{{lists,umerge2_1,5},                           1,    0.020,    0.004}]}.    
+
+{[{{rebar_core,execute,5},                        3,    0.011,    0.011},      
+  {{rebar_core,execute_plugin_hook,6},            2,    0.007,    0.007},      
+  {{filename,join,2},                             1,    0.004,    0.004}],     
+ { {erlang,atom_to_list,1},                       6,    0.022,    0.022},     %
+ [ ]}.
+
+{[{{erl_parse,build_function,1},                  1,    0.022,    0.004}],     
+ { {erl_parse,check_clauses,3},                   1,    0.022,    0.004},     %
+ [{{erl_parse,mapl,2},                            1,    0.018,    0.011}]}.    
+
+{[{{rebar,run_aux,2},                             1,    0.021,    0.011},      
+  {{rebar,'-run_aux/2-lc$^0/1-0-',1},             1,    0.000,    0.004}],     
+ { {rebar,'-run_aux/2-lc$^0/1-0-',1},             2,    0.021,    0.015},     %
+ [{{erlang,list_to_atom,1},                       1,    0.006,    0.006},      
+  {{rebar,'-run_aux/2-lc$^0/1-0-',1},             1,    0.000,    0.004}]}.    
+
+{[{{rebar_config,get_all,2},                      1,    0.020,    0.008},      
+  {{proplists,get_all_values,2},                  3,    0.000,    0.012}],     
+ { {proplists,get_all_values,2},                  4,    0.020,    0.020},     %
+ [{{proplists,get_all_values,2},                  3,    0.000,    0.012}]}.    
+
+{[{{lists,umerge2_2,4},                           1,    0.020,    0.004},      
+  {{lists,umerge2_1,5},                           2,    0.000,    0.012}],     
+ { {lists,umerge2_1,5},                           3,    0.020,    0.016},     %
+ [{{lists,reverse,2},                             1,    0.004,    0.004},      
+  {{lists,umerge2_1,5},                           2,    0.000,    0.012}]}.    
+
+{[{{rebar_core,execute_plugin_hook,6},            2,    0.014,    0.014},      
+  {{rebar,'-run_aux/2-lc$^0/1-0-',1},             1,    0.006,    0.006}],     
+ { {erlang,list_to_atom,1},                       3,    0.020,    0.020},     %
+ [ ]}.
+
+{[{{erl_parse,check_clauses,3},                   1,    0.018,    0.011},      
+  {{erl_parse,mapl,2},                            1,    0.000,    0.003}],     
+ { {erl_parse,mapl,2},                            2,    0.018,    0.014},     %
+ [{{erl_parse,'-check_clauses/3-fun-0-',3},       1,    0.004,    0.004},      
+  {{erl_parse,mapl,2},                            1,    0.000,    0.003}]}.    
+
+{[{{rebar_deps,find_deps,4},                      1,    0.015,    0.008}],     
+ { {rebar_deps,acc_deps,5},                       1,    0.015,    0.008},     %
+ [{{erlang,setelement,3},                         1,    0.007,    0.007}]}.    
+
+{[{{erl_parse,yecctoken_end_location,1},          1,    0.008,    0.004},      
+  {{erl_parse,yecctoken_location,1},              1,    0.007,    0.004}],     
+ { {erl_scan,token_info,2},                       2,    0.015,    0.008},     %
+ [{{erl_scan,attributes_info,2},                  2,    0.007,    0.007}]}.    
+
+{[{{rebar_core,process_commands,2},               1,    0.014,    0.005}],     
+ { {rebar_utils,abort,0},                         1,    0.014,    0.005},     %
+ [{{erlang,throw,1},                              1,    0.009,    0.009}]}.    
+
+{[{{erl_parse,yecctoken_end_location,1},          1,    0.014,    0.007}],     
+ { {erl_parse,yecctoken_location,1},              1,    0.014,    0.007},     %
+ [{{erl_scan,token_info,2},                       1,    0.007,    0.004}]}.    
+
+{[{{sets,add_element,2},                          1,    0.013,    0.009}],     
+ { {sets,maybe_expand,2},                         1,    0.013,    0.009},     %
+ [{{erlang,setelement,3},                         1,    0.004,    0.004}]}.    
+
+{[{{rebar_deps,setup_env,1},                      1,    0.007,    0.007},      
+  {{rebar_deps,set_shared_deps_dir,2},            1,    0.006,    0.006}],     
+ { {os,getenv,1},                                 2,    0.013,    0.013},     %
+ [ ]}.
+
+{[{{rebar_core,process_commands,2},               1,    0.012,    0.008}],     
+ { {rebar_config,clean_config,2},                 1,    0.012,    0.008},     %
+ [{{erlang,setelement,3},                         1,    0.004,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2,7},                       1,    0.012,    0.004}],     
+ { {erl_parse,yeccpars2_449,7},                   1,    0.012,    0.004},     %
+ [{{erl_parse,yeccgoto_form,7},                   1,    0.008,    0.004}]}.    
+
+{[{{error_handler,undefined_function,3},          1,    0.011,    0.007}],     
+ { {sets,new,0},                                  1,    0.011,    0.007},     %
+ [{{sets,mk_seg,1},                               1,    0.004,    0.004}]}.    
+
+{[{{io,bc_req,3},                                 3,    0.011,    0.011}],     
+ { {net_kernel,dflag_unicode_io,1},               3,    0.011,    0.011},     %
+ [ ]}.
+
+{[{{io,format,2},                                 1,    0.011,    0.008}],     
+ { {io,default_output,0},                         1,    0.011,    0.008},     %
+ [{{erlang,group_leader,0},                       1,    0.003,    0.003}]}.    
+
+{[{{rebar_core,plugin_modules,2},                 1,    0.010,    0.003}],     
+ { {rebar_core,ulist,1},                          1,    0.010,    0.003},     %
+ [{{rebar_core,ulist,2},                          1,    0.007,    0.004}]}.    
+
+{[{{sets,on_bucket,3},                            1,    0.009,    0.005}],     
+ { {sets,'-add_element/2-fun-0-',2},              1,    0.009,    0.005},     %
+ [{{sets,add_bkt_el,3},                           1,    0.004,    0.004}]}.    
+
+{[{{erl_parse,yeccpars2_449,7},                   1,    0.008,    0.004}],     
+ { {erl_parse,yeccgoto_form,7},                   1,    0.008,    0.004},     %
+ [{{erl_parse,yeccpars2_7,7},                     1,    0.004,    0.004}]}.    
+
+{[{{rebar_deps,preprocess,2},                     1,    0.007,    0.004}],     
+ { {rebar_deps,dep_dirs,1},                       1,    0.007,    0.004},     %
+ [{{rebar_deps,'-dep_dirs/1-lc$^0/1-0-',1},       1,    0.003,    0.003}]}.    
+
+{[{{rebar_core,ulist,1},                          1,    0.007,    0.004}],     
+ { {rebar_core,ulist,2},                          1,    0.007,    0.004},     %
+ [{{lists,reverse,1},                             1,    0.003,    0.003}]}.    
+
+{[{{file,open,2},                                 2,    0.007,    0.007}],     
+ { {lists,member,2},                              2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{erl_scan,token_info,2},                       2,    0.007,    0.007}],     
+ { {erl_scan,attributes_info,2},                  2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{epp,read_encoding_from_file,2},               1,    0.004,    0.004},      
+  {{epp,'-reader/2-fun-0-',2},                    1,    0.003,    0.003}],     
+ { {epp,reader,2},                                2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{epp,read_encoding_from_file,2},               2,    0.006,    0.006}],     
+ { {lists,keyfind,3},                             2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{lists,flatten,1},                             1,    0.006,    0.006}],     
+ { {lists,do_flatten,2},                          1,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{dict,is_key,2},                               2,    0.006,    0.006}],     
+ { {dict,find_key,2},                             2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{rebar_subdirs,preprocess,2},                  1,    0.005,    0.005}],     
+ { {rebar_subdirs,'-preprocess/2-lc$^0/1-0-',2},   1,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{rebar_deps,preprocess,2},                     1,    0.005,    0.005}],     
+ { {rebar_deps,'-preprocess/2-lc$^0/1-0-',1},     1,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{application,start,2},                         1,    0.005,    0.005}],     
+ { {application,get_appl_name,1},                 1,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{rebar_port_compiler,get_defines,1},           1,    0.004,    0.004}],     
+ { {string,join,2},                               1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{sets,new,0},                                  1,    0.004,    0.004}],     
+ { {sets,mk_seg,1},                               1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{sets,'-add_element/2-fun-0-',2},              1,    0.004,    0.004}],     
+ { {sets,add_bkt_el,3},                           1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{rebar_port_compiler,get_defines,1},           1,    0.004,    0.004}],     
+ { {rebar_port_compiler,'-get_defines/1-lc$^0/1-0-',1},   1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{rebar_subdirs,preprocess,2},                  1,    0.004,    0.004}],     
+ { {lists,foreach,2},                             1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{filelib,do_wildcard_4,3},                     1,    0.004,    0.004}],     
+ { {filelib,will_always_match,1},                 1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{rebar_subdirs,preprocess,2},                  1,    0.004,    0.004}],     
+ { {erlang,make_fun,3},                           1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{erlang,demonitor,2},                          1,    0.004,    0.004}],     
+ { {erlang,flush_monitor_message,2},              1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{erl_parse,yeccgoto_form,7},                   1,    0.004,    0.004}],     
+ { {erl_parse,yeccpars2_7,7},                     1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{erl_parse,mapl,2},                            1,    0.004,    0.004}],     
+ { {erl_parse,'-check_clauses/3-fun-0-',3},       1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{rebar_deps,preprocess,2},                     1,    0.003,    0.003}],     
+ { {rebar_deps,update_deps_code_path,2},          1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{rebar_deps,dep_dirs,1},                       1,    0.003,    0.003}],     
+ { {rebar_deps,'-dep_dirs/1-lc$^0/1-0-',1},       1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{rebar_core,process_dir1,6},                   1,    0.003,    0.003}],     
+ { {rebar_core,restore_code_path,1},              1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{rebar_core,plugin_modules,2},                 1,    0.003,    0.003}],     
+ { {rebar_core,plugin_modules,3},                 1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{io,default_output,0},                         1,    0.003,    0.003}],     
+ { {erlang,group_leader,0},                       1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{erl_parse,yeccpars1,7},                       1,    0.003,    0.003}],     
+ { {erl_parse,yecc_end,1},                        1,    0.003,    0.003},     %
+ [ ]}.
+
+{[{{epp,set_encoding,1},                          1,    0.003,    0.003}],     
+ { {epp,default_encoding,0},                      1,    0.003,    0.003},     %
+ [ ]}.
+
+{[ ],
+ { undefined,                                     0,    0.000,    0.000},     %
+ [{{fprof,apply_start_stop,4},                    0, 1243.917,    0.052}]}.    
+
+
