@@ -1,0 +1,8 @@
+run_erl [7341] Tue Sep 16 11:31:15 2014
+Args before exec of shell:
+run_erl [7341] Tue Sep 16 11:31:15 2014
+argv[0] = sh
+run_erl [7341] Tue Sep 16 11:31:15 2014
+argv[1] = -c
+run_erl [7341] Tue Sep 16 11:31:15 2014
+argv[2] = exec /Users/arthur/Code/erlang/fxerl/rel/fxerl/bin/fxerl console '' 

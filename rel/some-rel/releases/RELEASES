@@ -1,0 +1,10 @@
+[{release,"some-rel","1.0.0","6.1",
+          [{kernel,"3.0.1",
+                   "/Users/arthur/Code/erlang/fxerl/rel/some-rel/lib/kernel-3.0.1"},
+           {stdlib,"2.1",
+                   "/Users/arthur/Code/erlang/fxerl/rel/some-rel/lib/stdlib-2.1"},
+           {jsx,"2.0.1",
+                "/usr/local/Cellar/erlang/17.1_1/lib/erlang/lib/jsx-2.0.1"},
+           {fxerl,"1",
+                  "/usr/local/Cellar/erlang/17.1_1/lib/erlang/lib/fxerl-1"}],
+          permanent}].

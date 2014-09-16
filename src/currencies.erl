@@ -8,8 +8,7 @@ print_pairs(_, []) ->
 print_pairs(Rates, Keys) ->
 	[Hk|Tk] = Keys,
 	io:format("1 dollar is ~p ~p ~n",[proplists:get_value(Hk, Rates), binary_to_list(Hk)]),
-	io:format("1 ~p is ~p dollars ~n",[binary_to_list(Hk), 1/proplists:get_value(Hk, Rates)]),
-	io:format("~n"),
+	io:format("1 ~p is ~p dollars ~n ~n",[binary_to_list(Hk), 1/proplists:get_value(Hk, Rates)]),
 	print_pairs(Rates, Tk).
 
 start() -> 

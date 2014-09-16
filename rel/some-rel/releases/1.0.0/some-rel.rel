@@ -1,0 +1,5 @@
+%% rel generated at {2014,9,16} {11,41,52}
+{release,{"some-rel","1.0.0"},
+         {erts,"6.1"},
+         [{kernel,"3.0.1"},{stdlib,"2.1"},{jsx,"2.0.1"},{fxerl,"1"}]}.
+
